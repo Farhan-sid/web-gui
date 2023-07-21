@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 7 Practice Set</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        padding: 20px 0;
+        display: inline-grid;
+        grid-template-columns: auto auto;
+      }
+      ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      header {
+        background-color: black;
+        color: white;
+      }
+      .container {
+        display: grid;
+        height: 100vh;
+        background-color: yellow;
+        grid-gap: 40px;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px;
+        justify-content: space-around;
+        align-content: space-around;
+      }
+      .item {
+        background-color: aqua;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+    </div>
+  </body>
+</html>
