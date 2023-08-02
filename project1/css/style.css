@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: whitesmoke;
+}
 header {
   background-color: var(--main-bg-color);
   font-family: "Lato", sans-serif;
@@ -68,22 +71,45 @@ nav ul li a:hover {
   width: 1550px;
   border: 1px solid white;
 }
-.card h2 {
-  font-family: "Ubuntu", sans-serif;
-}
 .card {
   max-width: 91vw;
   margin: auto auto 35px auto;
+}
+.cards {
+  background-color: white;
+  max-width: 91vw;
+  max-height: 50vh;
+}
+.card2 {
+  max-width: 91vw;
+  margin: -50px auto 35px auto;
+}
+.cards2 {
+  background-color: white;
+  max-width: 91vw;
+  max-height: 50vh;
+}
+.card3 {
+  max-width: 91vw;
+  margin: -50px auto 35px auto;
+}
+.cards3 {
+  background-color: white;
+  max-width: 91vw;
+  max-height: 50vh;
+}
+.card h2 {
+  font-family: "Ubuntu", sans-serif;
 }
 .card-item {
   width: 9vw;
   display: inline-flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 8px;
+  margin: 0 36px;
   cursor: pointer;
 }
-.card-item img:hover {
+.card-item img {
   height: 170px;
   width: 170px;
 }
