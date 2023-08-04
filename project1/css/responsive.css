@@ -1,7 +1,9 @@
-@media screen and (max-width: 1000px) {
-  body {
-    background-color: red;
+@media screen and (max-width: 1720px) {
+  .card-item {
+    width: 8vw;
   }
+}
+@media screen and (max-width: 1100px) {
   .slider img {
     height: 15vh;
   }
@@ -23,7 +25,7 @@
     margin: 12px 16px;
   }
   .card-item {
-    height: 20vh;
+    height: 23vh;
     width: 20vw;
     margin: 0 48px;
   }
@@ -33,12 +35,46 @@
   }
   .cards {
     overflow: scroll;
-    height: 60vh;
+    height: 51vh;
     margin: 30px 0 35px;
   }
   .my-2 {
     display: flex;
     justify-content: center;
     margin: 25px 0 35px;
+  }
+  .card2 {
+    max-width: 91vw;
+    margin: -25px auto 35px auto;
+  }
+  .cards2 {
+    overflow: scroll;
+    height: 51vh;
+    margin: 30px 0 35px;
+  }
+  .cards3 {
+    overflow: scroll;
+    height: 51vh;
+    margin: 30px 0 35px;
+  }
+  footer {
+    height: 7vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-item img {
+    height: 10vh;
+    width: 18vw;
+  }
+  .lines {
+    font-size: 12px;
+  }
+  .card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25vh;
+    width: 14vw;
+    margin: -6px 48px;
   }
 }
