@@ -6,272 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class Registration</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: cadetblue;
-      }
-      @media screen and (max-width: 800px) {
-        body {
-          background-color: red;
-        }
-      }
-      @media screen and (max-width: 600px) {
-        body {
-          background-color: yellow;
-        }
-      }
-      header {
-        margin: 60px -5px;
-      }
-      .nav {
-        text-align: center;
-        position: relative;
-        bottom: 29px;
-      }
-
-      .nav h1 {
-        font-size: 50px;
-      }
-      .nav p {
-        margin: 11px;
-        font-size: 16px;
-      }
-      .hr {
-        height: 15px;
-      }
-      .section1 {
-        margin: 25px 95px;
-        font-size: 18px;
-      }
-      .section1 h3 {
-        position: relative;
-        left: 20px;
-      }
-      section {
-        text-align: center;
-      }
-      .section2 {
-        display: inline-block;
-        margin: 0px 62px;
-      }
-      .section2 input {
-        height: 40px;
-        width: 250px;
-        border-radius: 7px;
-        border: 2px solid;
-      }
-      .section3 {
-        display: inline-block;
-        margin: 0px -58px;
-      }
-      .section3 input {
-        height: 40px;
-        width: 250px;
-        border-radius: 7px;
-        border: 2px solid;
-      }
-      .section4 {
-        display: inline-block;
-        margin: 0px 51px;
-        padding: 10px;
-      }
-      .section4 input {
-        height: 40px;
-        width: 250px;
-        border-radius: 7px;
-        border: 2px solid;
-      }
-      .name1 {
-        text-align: left;
-        margin: 15px 92px;
-        position: relative;
-        left: 19px;
-      }
-      .name2 {
-        position: relative;
-        bottom: 33px;
-        right: 72px;
-      }
-      .name3 {
-        text-align: center;
-        position: relative;
-        bottom: 52px;
-        left: 181px;
-      }
-      .gender h3 {
-        text-align: left;
-        position: relative;
-        left: 115px;
-        bottom: 16px;
-      }
-      .box1 {
-        display: flex;
-        position: relative;
-        left: 110px;
-        bottom: -20px;
-      }
-      .box1 select {
-        height: 44px;
-        width: 350px;
-        border-radius: 7px;
-        background-color: white;
-        border: 2px solid;
-      }
-      .Email h3 {
-        text-align: center;
-        position: relative;
-        bottom: 83px;
-        left: 121px;
-      }
-      .box2 input {
-        position: relative;
-        bottom: 47px;
-        right: -213px;
-        height: 40px;
-        width: 350px;
-        border-radius: 7px;
-        background-color: white;
-        border: 2px solid;
-      }
-      .ID h3 {
-        text-align: left;
-        position: relative;
-        bottom: 2px;
-        left: 115px;
-      }
-      .box3 input {
-        position: relative;
-        bottom: -33px;
-        left: 109px;
-        display: flex;
-        height: 40px;
-        width: 347px;
-        border-radius: 7px;
-        border: 2px solid;
-      }
-      .List h3 {
-        text-align: center;
-        position: relative;
-        bottom: 69px;
-        left: 114px;
-      }
-      .box4 select {
-        position: relative;
-        bottom: 34px;
-        left: 213px;
-        height: 44px;
-        width: 355px;
-        border-radius: 7px;
-        background-color: white;
-        border: 2px solid;
-      }
-      .hr1 hr {
-        position: relative;
-        bottom: -8px;
-      }
-      .submit input {
-        position: relative;
-        bottom: -47px;
-        left: 407px;
-        height: 48px;
-        width: 180px;
-        background-color: #87e9e4;
-        font-family: inherit;
-        font-size: 22px;
-        border-radius: 7px;
-        border: 2px solid;
-      }
-    </style>
+    <link rel="stylesheet" href="/frontend/style.css" />
   </head>
   <body>
-    <form action="action.php">
-      <header>
-        <div class="nav">
-          <h1>Class Registration</h1>
-          <p>Fill out the form carefully for Registration</p>
-        </div>
-        <div class="hr"><hr /></div>
-      </header>
-      <main>
-        <div class="section1">
-          <h3>Student name</h3>
-        </div>
-        <section>
-          <div class="section2"><input type="text" placeholder="" /></div>
-          <div class="section3"><input type="text" placeholder="" /></div>
-          <div class="section4"><input type="text" placeholder="" /></div>
-        </section>
-        <section>
-          <div class="name1">First name</div>
-          <div class="name2">Middle name</div>
-          <div class="name3">Last name</div>
-        </section>
-        <section>
-          <div class="gender">
-            <h3>gender</h3>
+    <div class="form">
+      <form action="action.php">
+        <header>
+          <div class="nav">
+            <h1>Class Registration</h1>
+            <p>Fill out the form carefully for Registration</p>
           </div>
-          <div class="box1">
-            <select name="Gender">
-              <option value="Pleaes Select" selected="selected">
-                Pleaes Select
-              </option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="N/A">N/A</option>
-            </select>
+        </header>
+        <main>
+          <div class="container">
+            <div class="section1">
+              <h3>Student name</h3>
+            </div>
+            <section>
+              <div class="section2"><input type="text" placeholder="" /></div>
+              <div class="section3"><input type="text" placeholder="" /></div>
+              <div class="section4"><input type="text" placeholder="" /></div>
+            </section>
+            <section>
+              <div class="name1">First name</div>
+              <div class="name2">Middle name</div>
+              <div class="name3">Last name</div>
+            </section>
+            <section>
+              <div class="gender">
+                <h3>gender</h3>
+              </div>
+              <div class="box1">
+                <select name="Gender">
+                  <option value="Pleaes Select" selected="selected">
+                    Pleaes Select
+                  </option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="N/A">N/A</option>
+                </select>
+              </div>
+            </section>
+            <section>
+              <div class="Email">
+                <h3>Student E-mail</h3>
+              </div>
+              <div class="box2">
+                <input type="text" placeholder="ex:myname@example.com" />
+              </div>
+            </section>
+            <section>
+              <div class="ID">
+                <h3>Student ID</h3>
+              </div>
+              <div class="box3"><input type="text" placeholder="" /></div>
+            </section>
+            <section>
+              <div class="List">
+                <h3>List of classes</h3>
+              </div>
+              <div class="box4">
+                <select name="Classes">
+                  <option value="Pleaes Select" selected="selected">
+                    Pleaes Select
+                  </option>
+                  <option value="English 101">English 101</option>
+                  <option value="English 202">English 202</option>
+                  <option value="English 303">English 303</option>
+                  <option value="English 404">English 404</option>
+                  <option value="Math 101">Math 101</option>
+                  <option value="Math 202">Math 202</option>
+                  <option value="Math 303">Math 303</option>
+                  <option value="Math 404">Math 404</option>
+                  <option value="Science 101">Science 101</option>
+                  <option value="Science 202">Science 202</option>
+                  <option value="Science 303">Science 303</option>
+                  <option value="Science 404">Science 404</option>
+                </select>
+              </div>
+            </section>
           </div>
-        </section>
-        <section>
-          <div class="Email">
-            <h3>Student E-mail</h3>
+        </main>
+        <footer>
+          <div class="submit">
+            <input type="submit" value="submit" />
           </div>
-          <div class="box2">
-            <input type="text" placeholder="ex:myname@example.com" />
-          </div>
-        </section>
-        <section>
-          <div class="ID">
-            <h3>Student ID</h3>
-          </div>
-          <div class="box3"><input type="text" placeholder="" /></div>
-        </section>
-        <section>
-          <div class="List">
-            <h3>List of classes</h3>
-          </div>
-          <div class="box4">
-            <select name="Classes">
-              <option value="Pleaes Select" selected="selected">
-                Pleaes Select
-              </option>
-              <option value="English 101">English 101</option>
-              <option value="English 202">English 202</option>
-              <option value="English 303">English 303</option>
-              <option value="English 404">English 404</option>
-              <option value="Math 101">Math 101</option>
-              <option value="Math 202">Math 202</option>
-              <option value="Math 303">Math 303</option>
-              <option value="Math 404">Math 404</option>
-              <option value="Science 101">Science 101</option>
-              <option value="Science 202">Science 202</option>
-              <option value="Science 303">Science 303</option>
-              <option value="Science 404">Science 404</option>
-            </select>
-          </div>
-          <div class="hr1">
-            <hr />
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="submit">
-          <input type="submit" value="submit" />
-        </div>
-      </footer>
-    </form>
+        </footer>
+      </form>
+    </div>
   </body>
 </html>
