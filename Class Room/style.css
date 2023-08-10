@@ -1,44 +1,35 @@
-h1 {
-  display: flex;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-.container {
-  height: 400px;
-  width: 1500px;
-  border: 2px solid black;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+header {
+  background-color: black;
+  color: white;
+  height: 60px;
 }
-
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
 .box1 {
-  height: 200px;
-  width: 200px;
-  background-color: red;
-  border: 2px solid black;
+  height: 400px;
+  width: 400px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
 }
 .box2 {
   height: 200px;
   width: 200px;
-  background-color: green;
-  border: 2px solid black;
-}
-.box3 {
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-  border: 2px solid black;
-}
-.box4 {
-  height: 200px;
-  width: 200px;
-  background-color: aqua;
-  border: 2px solid black;
-}
-.box5 {
-  height: 200px;
-  width: 200px;
   background-color: aquamarine;
-  border: 2px solid black;
 }
