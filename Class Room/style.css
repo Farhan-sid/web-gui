@@ -1,10 +1,44 @@
-div {
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  height: 400px;
+  width: 1500px;
+  border: 2px solid black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box1 {
   height: 200px;
   width: 200px;
-  background-image: url("img1.jpg");
-  background-size: cover;
-  color: white;
-  position: fixed;
-  right: 0;
-  top: 250px;
+  background-color: red;
+  border: 2px solid black;
+}
+.box2 {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  border: 2px solid black;
+}
+.box3 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  border: 2px solid black;
+}
+.box4 {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border: 2px solid black;
+}
+.box5 {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  border: 2px solid black;
 }
