@@ -15,12 +15,14 @@ body {
     background-color: yellow;
   }
 }
+
 header {
   display: flex;
   justify-content: center;
   height: 150px;
   margin: 0px auto 22px;
 }
+
 .form {
   background: white;
   width: 55vw;

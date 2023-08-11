@@ -8,8 +8,24 @@
   margin: 0;
   padding: 0;
 }
+@keyframes lode {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 70vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
 body {
   background-color: whitesmoke;
+}
+.progress {
+  background-color: red;
+  height: 2px;
+  animation: lode 0.5s ease-in-out;
 }
 header {
   background-color: var(--main-bg-color);
