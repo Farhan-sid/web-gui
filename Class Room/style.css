@@ -1,39 +1,17 @@
-div {
+.loader {
   height: 200px;
   width: 200px;
-  background-color: black;
-  animation: farhan 1s ease-in 0.5s infinite;
+  border-radius: 50%;
+  border: 20px solid #56e39f;
+  border-top: 20px solid #e0ff4f;
+  animation: spin 2s ease-in infinite;
 }
 
-@keyframes farhan {
-  from {
-    rotate: 0deg;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    rotate: 360deg;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  div {
-    background-color: green;
-  }
-}
-
-@media screen and (min-width: 300px) and (max-width: 400px) {
-  div {
-    background-color: pink;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  div {
-    background-color: red;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  div {
-    background-color: blue;
+  100% {
+    transform: rotate(360deg);
   }
 }
