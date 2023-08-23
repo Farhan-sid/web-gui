@@ -1,0 +1,61 @@
+@media screen and (max-width: 412px) {
+  .navbar {
+    height: 45px !important;
+  }
+  .nav-logo {
+    height: 28px !important;
+    width: 45px !important;
+  }
+  .logo {
+    background-size: cover !important;
+    height: 28px !important;
+    width: 45px !important;
+  }
+  .add-first {
+    font-size: 0.45rem !important;
+    margin-left: 15px !important;
+  }
+  .add-second {
+    font-size: 0.65rem !important;
+  }
+  .nav-address {
+    margin-left: 10px;
+  }
+  .nav-search {
+    display: flex !important;
+    width: 35% !important;
+    height: 15px !important;
+    border-radius: 4px !important;
+    justify-content: space-evenly !important;
+    border: 2px solid transparent !important;
+  }
+  .search-select {
+    background-color: #f3f3f3 !important;
+    width: 50px !important;
+    text-align: center !important;
+    border-top-left-radius: 2px !important;
+    border-bottom-left-radius: 2px !important;
+    border: none !important;
+    font-size: 9px;
+  }
+  .search-input {
+    width: 100% !important;
+    font-size: 0.65rem !important;
+    border: none !important;
+  }
+  .search-icon {
+    font-size: 0.85rem !important;
+  }
+  span {
+    font-size: 0.4rem !important;
+  }
+  .nav-second {
+    font-size: 0.45rem !important;
+  }
+  .nav-cart {
+    font-size: 0.45rem !important;
+  }
+  .nav-cart i {
+    font-size: 10px !important;
+  }
+}

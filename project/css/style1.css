@@ -19,7 +19,7 @@
   width: 100px;
 }
 .logo {
-  background-image: url("/frontend/Project 2/img/amazon_logo.png");
+  background-image: url("/frontend/project/img/amazon_logo.png");
   background-size: cover;
   height: 50px;
   width: 100px;
@@ -58,7 +58,7 @@
 
 .nav-search {
   display: flex;
-  width: 620px;
+  width: 60%;
   height: 40px;
   border-radius: 4px;
   justify-content: space-evenly;
@@ -144,7 +144,7 @@ span {
 /* hero-section */
 
 .hero-section {
-  background-image: url("/frontend/Project 2/img/hero_image.jpg");
+  background-image: url("/frontend/project/img/hero_image.jpg");
   background-size: cover;
   height: 400px;
   display: flex;
@@ -206,7 +206,7 @@ span {
 
 .box-contant p:hover {
   color: #febd68;
-  border-bottom: 1px solid #febd68;
+  text-decoration: #febd68 underline;
 }
 
 /* footer */
@@ -247,11 +247,10 @@ ul {
   font-size: 0.85rem;
   color: #dddddd;
   margin-top: 10px;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+  text-decoration: transparent underline;
 }
 .foot-panel2 a:hover {
-  border-bottom: 1px solid white;
+  text-decoration: underline;
 }
 
 /* foot-panel3 */
@@ -287,6 +286,10 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 25px 0;
+  text-decoration: transparent underline;
+}
+.boxs1:hover {
+  text-decoration: underline;
 }
 
 .foot-panel4 p {
@@ -315,4 +318,13 @@ ul {
 .foot-panel5 a {
   color: white;
   text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.foot-panel5 a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.85rem;
 }
