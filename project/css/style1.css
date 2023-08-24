@@ -53,6 +53,9 @@
   display: flex;
   align-items: center;
 }
+.add-icon i {
+  font-weight: 900;
+}
 
 /* box 3 */
 
@@ -226,6 +229,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -20px;
 }
 
 /* foot-panel2 */
@@ -318,7 +322,7 @@ ul {
 .foot-panel5 a {
   color: white;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.65rem;
 }
 
 .foot-panel5 a:hover {
@@ -326,5 +330,5 @@ ul {
 }
 
 .copyright {
-  font-size: 0.85rem;
+  font-size: 0.65rem;
 }
