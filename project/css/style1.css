@@ -17,6 +17,7 @@
 .nav-logo {
   height: 50px;
   width: 100px;
+  cursor: pointer;
 }
 .logo {
   background-image: url("/frontend/project/img/amazon_logo.png");
@@ -38,6 +39,9 @@
 }
 
 /* box 2 */
+.nav-address {
+  cursor: pointer;
+}
 
 .add-first {
   color: #cccccc;
@@ -78,6 +82,7 @@
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .search-input {
@@ -96,9 +101,13 @@
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   color: #0f1111;
+  cursor: pointer;
 }
 
 /* box4 */
+.nav-signin {
+  cursor: pointer;
+}
 
 span {
   font-size: 0.7rem;
@@ -108,15 +117,18 @@ span {
   font-size: 0.85rem;
   font-weight: 700;
 }
-
-/* box6 */
-.nav-cart i {
-  font-size: 30px;
+.nav-return {
+  cursor: pointer;
 }
 
+/* box6 */
 .nav-cart {
   font-size: 0.85rem;
   font-weight: 700;
+  cursor: pointer;
+}
+.nav-cart i {
+  font-size: 30px;
 }
 
 /* panel */
@@ -129,10 +141,20 @@ span {
   align-items: center;
   justify-content: space-evenly;
 }
+.panel-all {
+  cursor: pointer;
+}
 
-.panel-ops p {
+.panel-ops a {
+  color: white;
   display: inline;
   margin-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.panel-ops a:hover {
+  border: 1px solid white;
 }
 .panel-ops {
   width: 80%;
@@ -142,6 +164,7 @@ span {
 .panel-deals {
   font-size: 0.9rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* hero-section */
@@ -188,6 +211,9 @@ span {
   padding: 20px 0 15px;
   margin-top: 15px;
 }
+h2 {
+  font-size: 1.1rem;
+}
 
 .box-img {
   height: 300px;
@@ -212,6 +238,27 @@ span {
   text-decoration: #febd68 underline;
 }
 
+.box-container {
+  height: 435px;
+  width: 1798px;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container-img img {
+  height: 280px;
+  margin-top: 35px;
+  margin-left: 25px;
+}
+.h2 {
+  padding-top: 25px;
+  padding-left: 25px;
+  font-size: 2rem;
+}
+li {
+  text-decoration: none;
+}
+
 /* footer */
 
 footer {
@@ -230,6 +277,10 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: -20px;
+  cursor: pointer;
+}
+.foot-panel1:hover {
+  background-color: #455569;
 }
 
 /* foot-panel2 */
