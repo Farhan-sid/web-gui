@@ -4,7 +4,22 @@
   font-family: arial;
   border: border-box;
 }
-
+.progress-bar {
+  height: 2px;
+  background-color: red;
+  animation: loder 1s ease-in-out;
+}
+@keyframes loder {
+  0% {
+    width: 0vw;
+  }
+  80% {
+    width: 90vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
 .navbar {
   height: 60px;
   background-color: #0f1111;
@@ -244,19 +259,34 @@ h2 {
   background-color: white;
   margin-top: 15px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
-.container-img img {
+.slider-1 {
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+}
+.slider-1 img {
   height: 280px;
   margin-top: 35px;
-  margin-left: 25px;
+  margin-left: 90px;
+  cursor: pointer;
+  transform: translate(-93vw);
+  animation: farhan 3s ease-in-out 2s;
+}
+
+@keyframes farhan {
+  0% {
+    transform: translate(-93vw);
+  }
+  100% {
+    transform: translate(-2vw);
+  }
 }
 .h2 {
   padding-top: 25px;
   padding-left: 25px;
   font-size: 2rem;
-}
-li {
-  text-decoration: none;
 }
 
 /* footer */
