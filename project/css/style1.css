@@ -272,7 +272,7 @@ h2 {
   margin-left: 90px;
   cursor: pointer;
   transform: translate(-93vw);
-  animation: farhan 3s ease-in-out 2s;
+  animation: farhan 4s ease-in-out 2s infinite;
 }
 
 @keyframes farhan {
@@ -281,6 +281,41 @@ h2 {
   }
   100% {
     transform: translate(-2vw);
+  }
+}
+
+.box-container2 {
+  height: 435px;
+  width: 1798px;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.slider-2 {
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+}
+
+.slider-2 img {
+  height: 280px;
+  margin-top: 35px;
+  margin-left: 90px;
+  cursor: pointer;
+  transform: translate(-93vw);
+  animation: farhan2 6s ease-in-out 2s infinite;
+}
+
+@keyframes farhan2 {
+  0% {
+    transform: translate(-158vw);
+  }
+  50% {
+    transform: translate(-60vw);
+  }
+  100% {
+    transform: translate(-3vw);
   }
 }
 .h2 {
