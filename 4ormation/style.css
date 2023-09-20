@@ -253,7 +253,7 @@ header {
   height: 400px;
   width: 376px;
   border-radius: 10px;
-  background-image: url(/4ormation/img/img1.jpg);
+  background-image: url(/frontend/4ormation/img/img1.jpg);
   background-size: cover;
 }
 
@@ -283,7 +283,7 @@ header {
   height: 400px;
   width: 376px;
   border-radius: 10px;
-  background-image: url(/4ormation/img/img2.jpg);
+  background-image: url(/frontend/4ormation/img/img2.jpg);
   background-size: cover;
 }
 
@@ -291,7 +291,7 @@ header {
   height: 400px;
   width: 376px;
   border-radius: 10px;
-  background-image: url(/4ormation/img/img3.jpg);
+  background-image: url(/frontend/4ormation/img/img3.jpg);
   background-size: cover;
 }
 
@@ -395,7 +395,7 @@ header {
 .image-box {
   height: 248px;
   width: 444px;
-  background-image: url(/4ormation/img/section-4-img-1.jpg);
+  background-image: url(/frontend/4ormation/img/section-4-img-1.jpg);
   border-radius: 10px;
 }
 
@@ -445,7 +445,7 @@ header {
 .image-box {
   height: 248px;
   width: 444px;
-  background-image: url(/4ormation/img/section-4-img-1.jpg);
+  background-image: url(/frontend/4ormation/img/section-5-img.jpg);
   border-radius: 10px;
 }
 
@@ -495,7 +495,7 @@ header {
 .image-box {
   height: 248px;
   width: 444px;
-  background-image: url(/4ormation/img/section-4-img-1.jpg);
+  background-image: url(/frontend/4ormation/img/section-4-img-1.jpg);
   border-radius: 10px;
 }
 
