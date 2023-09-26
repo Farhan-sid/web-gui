@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 8 Practice 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .progress {
+        background-color: red;
+        height: 2px;
+        animation: load 0.5s ease-in-out;
+      }
+      header {
+        height: 100px;
+        background-color: black;
+      }
+      main {
+        height: 899px;
+        background-color: blue;
+      }
+
+      @keyframes load {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 95vw;
+        }
+        100% {
+          width: 100vw;
+        }
+      }
+      @keyframes slider1 {
+        0% {
+          transform: translate(-14vw);
+        }
+        100% {
+          transform: translate(71vw);
+        }
+      }
+      @keyframes slider2 {
+        0% {
+          transform: translate(0vw);
+        }
+        100% {
+          transform: translate(87vw);
+        }
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+      .slider {
+        background-color: white;
+        height: 420px;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .img1 {
+        transform: translate(-14vw);
+        animation: slider1 3s forwards 2s infinite;
+      }
+      .img2 {
+        transform: translate(0vw);
+        animation: slider2 3s forwards 2s infinite;
+      }
+      .img3 {
+        transform: translate(17vw);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+      <div class="slider">
+        <img class="img1" src="/imgs/img1.jpg" alt="" height="900px" />
+        <img class="img2" src="/imgs/img2.jpg" alt="" height="900px" />
+        <img class="img3" src="/imgs/img3.jpg" alt="" height="900px" />
+      </div>
+    </main>
+  </body>
+</html>
