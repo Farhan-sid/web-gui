@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: aqua;
+        border: 2px solid black;
+        margin: 3px 0;
+        padding: 5px;
+      }
+      .bg-primery {
+        background-color: blueviolet;
+      }
+      .text-success {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <h1>Welcome to my javascript</h1>
+    <button id="click">Click me</button>
+
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At,
+        architecto.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ullam
+        deleniti perspiciatis quo, maxime doloribus id inventore nam quaerat
+        velit?
+      </p>
+    </div>
   </body>
   <script>
     //  console.log("hello world");
@@ -15,137 +46,150 @@
     //  console.error("this is error");
     //  console.warn("this is warning");
 
-    var number1 = 34;
-    var number2 = 56;
+    // var number1 = 34;
+    //var number2 = 56;
     //  console.log(number1 + number2);
 
     // data types in javascript
 
-    var num1 = 444;
-    var num2 = 555;
+    //var num1 = 444;
+    //var num2 = 555;
 
     // string
 
-    var str1 = "this is string";
-    var str2 = "this is also a string";
+    //var str1 = "this is string";
+    //var str2 = "this is also a string";
 
     //objects
 
-    var marks = {
-      farhan: 99,
-      sami: 88,
-      aaliyan: 96,
-    };
+    //var marks = {
+    //  farhan: 99,
+    //  sami: 88,
+    //  aaliyan: 96,
+    //};
 
-    console.log(marks);
+    //console.log(marks);
 
     //booleans
 
-    var a = true;
-    var b = false;
+    //var a = true;
+    ////var b = false;
+    //
+    ////  console.log(a, b);
+    //
+    ////var und = undefined
+    //
+    //va//r und;
+    //
+    //co//nsole.log(und);
+    //
+    //////var n = null
+    //
+    //va//r n = null;
+    ////// console.log(n);
+    //
+    //////var arr = arrays
+    //va//r arr = [1, 2, 3, 4, 5];
+    //
+    ////// console.log(arr);
+    //
+    ////// operators in javascript
+    ////// arithmetic operators
+    //
+    //va//r a = 100;
+    //va//r b = 10;
+    //
+    //co//nsole.log("the value of a + b is ", a + b);
+    // //.log("the value of a - b is ", a - b);
+    // //.log("the value of a * b is ", a * b);
+    // //.log("the value of a / b is ", a / b);
+    //
+    //nment operators
+    //
+    // b;
+    // 6;
+    // //.log(c);
+    //
+    // //arison operators
+    //
+    // // 45;
+    // // 50;
+    // //.log(x == y);
+    // //.log(x <= y);
+    // //.log(x >= y);
+    // //.log(x > y);
+    // //.log(x < y);
+    //
+    // //ion of javascript
+    //
+    // //n avg(a, b) {
+    // //a + b) / 2;
+    // //n c;
+    // //
+    //
+    // //g(4, 6);
+    // //g(82, 68);
+    // //.log(c1, c2);
+    //
+    // //n avg(c, d) {
+    // //c + d) / 2;
+    // //n e;
+    // //
+    //
+    // //1 = avg(4, 6);
+    // //2 = avg(34, 56);
+    // //onsole.log(e1, e2);
+    //
+    // ///conditionals in javascript
+    //
+    // //ar age = 11;
+    // //if (age > 18) {
+    //  console.log("you are a kid");
+    //} else {
+    //  console.log("you are not a kid");
+    //}
+    //
+    //var age = 20;
+    //if (age < 25) {
+    //  console.log("you cannot drinking");
+    //} else {
+    //  console.log("you can drinking");
+    //}
+    //
+    //let myarr = ["FAN", "TREE", "45", "TRUE", "FARHAN"];
+    //console.log(myarr);
+    //
+    ////string methods in javascript
+    //
+    //let mylovelystring = "aaliyan is a good boy good good";
+    //console.log(mylovelystring.length);
+    //console.log(mylovelystring.indexOf("good"));
+    //console.log(mylovelystring.lastIndexOf("good"));
+    //console.log(mylovelystring.slice(0, 20));
+    //d = mylovelystring.replace("aaliyan", "sami");
+    //d = d.replace("good", "bad");
+    //console.log(d, mylovelystring);
+    //
+    //let myDate = new Date();
+    //console.log(myDate.getTime());
+    //console.log(myDate.getDay());
+    //console.log(myDate.getFullYear());
+    //console.log(myDate.getHours());
+    //console.log(myDate.getMonth());
+    //console.log(myDate.getMinutes());
+    //console.log(myDate.getSeconds());
 
-    //  console.log(a, b);
+    let elem = document.getElementById("click");
+    console.log(elem);
 
-    //var und = undefined
+    let elemclass = document.getElementsByClassName("container");
+    console.log(elemclass);
+    //elemclass[0].style.background = "yellow";
 
-    var und;
+    elemclass[0].classList.add("bg-primery");
+    elemclass[0].classList.add("text-success");
 
-    console.log(und);
-
-    //var n = null
-
-    var n = null;
-    // console.log(n);
-
-    //var arr = arrays
-    var arr = [1, 2, 3, 4, 5];
-
-    // console.log(arr);
-
-    // operators in javascript
-    // arithmetic operators
-
-    var a = 100;
-    var b = 10;
-
-    console.log("the value of a + b is ", a + b);
-    console.log("the value of a - b is ", a - b);
-    console.log("the value of a * b is ", a * b);
-    console.log("the value of a / b is ", a / b);
-
-    //assignment operators
-
-    var c = b;
-    c = c - 6;
-    console.log(c);
-
-    //comprarison operators
-
-    var x = 45;
-    var y = 50;
-    console.log(x == y);
-    console.log(x <= y);
-    console.log(x >= y);
-    console.log(x > y);
-    console.log(x < y);
-
-    //function of javascript
-
-    function avg(a, b) {
-      c = (a + b) / 2;
-      return c;
-    }
-
-    c1 = avg(4, 6);
-    c2 = avg(82, 68);
-    console.log(c1, c2);
-
-    function avg(c, d) {
-      e = (c + d) / 2;
-      return e;
-    }
-
-    e1 = avg(4, 6);
-    e2 = avg(34, 56);
-    console.log(e1, e2);
-
-    //conditionals in javascript
-
-    var age = 11;
-    if (age > 18) {
-      console.log("you are a kid");
-    } else {
-      console.log("you are not a kid");
-    }
-
-    var age = 20;
-    if (age < 25) {
-      console.log("you cannot drinking");
-    } else {
-      console.log("you can drinking");
-    }
-
-    let myarr = ["FAN", "TREE", "45", "TRUE", "FARHAN"];
-    console.log(myarr);
-
-    //string methods in javascript
-
-    let mylovelystring = "aaliyan is a good boy good good";
-    console.log(mylovelystring.length);
-    console.log(mylovelystring.indexOf("good"));
-    console.log(mylovelystring.lastIndexOf("good"));
-    console.log(mylovelystring.slice(0, 20));
-    d = mylovelystring.replace("aaliyan", "sami");
-    d = d.replace("good", "bad");
-    console.log(d, mylovelystring);
-
-    let myDate = new Date();
-    console.log(myDate.getTime());
-    console.log(myDate.getDay());
-    console.log(myDate.getFullYear());
-    console.log(myDate.getHours());
-    console.log(myDate.getMonth());
-    console.log(myDate.getMinutes());
-    console.log(myDate.getSeconds());
+    console.log(elemclass[0].innerHTML);
+    console.log(elemclass[0].innerText);
   </script>
 </html>
