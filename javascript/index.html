@@ -39,6 +39,9 @@
         velit?
       </p>
     </div>
+    <div class="section">
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
   </body>
   <script>
     //  console.log("hello world");
@@ -191,5 +194,14 @@
 
     console.log(elemclass[0].innerHTML);
     console.log(elemclass[0].innerText);
+
+    tn = document.getElementsByTagName("div");
+    console.log(tn);
+    createElement = document.createElement("p");
+    createElement.innerText = "aaliyan is a good boy";
+    tn[1].appendChild(createElement);
+
+    tn[1].style.background = "red";
+    tn[1].style.color = "blue";
   </script>
 </html>
