@@ -224,7 +224,23 @@
     };
 
     tn[0].addEventListener("click", function () {
-      console.log("Click hua");
+      console.log("Clicked on container ");
+    });
+
+    tn[0].addEventListener("mouseover", function () {
+      console.log("Mouse on container ");
+    });
+
+    tn[0].addEventListener("mouseout", function () {
+      console.log("Mouse out of container ");
+    });
+
+    tn[0].addEventListener("mouseup", function () {
+      console.log("Mouse up when clicked on container ");
+    });
+
+    tn[0].addEventListener("mousedown", function () {
+      console.log("Mouse down when clicked on container ");
     });
   </script>
 </html>
