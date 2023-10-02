@@ -26,7 +26,7 @@
   </head>
   <body>
     <h1>Welcome to my javascript</h1>
-    <button id="click">Click me</button>
+    <button id="click" onclick="clicked()">Click me</button>
 
     <div class="container">
       <p>
@@ -213,5 +213,18 @@
     console.log(sel);
     sel = document.querySelectorAll(".container");
     console.log(sel);
+
+    // Events in javascript
+    function clicked() {
+      console.log("The button was clicked");
+    }
+
+    window.onload = function () {
+      console.log("The document was loaded");
+    };
+
+    tn[0].addEventListener("click", function () {
+      console.log("Click hua");
+    });
   </script>
 </html>
