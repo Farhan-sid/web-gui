@@ -262,8 +262,12 @@
       clicked();
       console.log("I am your log");
     };
+    clearInterval(Clr);
     //settimeout and setinterval
     //Clr = setTimeout(logkaro, 2000);
     Clr = setInterval(logkaro, 5000);
+
+    // localStorage in javascript
+    localStorage.setItem("Name", "Farham");
   </script>
 </html>
