@@ -256,7 +256,14 @@
     summ = (a, b) => {
       return a + b;
     };
-
+    logkaro = () => {
+      document.querySelectorAll(".section")[0].innerHTML =
+        "<b> we have clicked </b>";
+      clicked();
+      console.log("I am your log");
+    };
     //settimeout and setinterval
+    //Clr = setTimeout(logkaro, 2000);
+    Clr = setInterval(logkaro, 5000);
   </script>
 </html>
