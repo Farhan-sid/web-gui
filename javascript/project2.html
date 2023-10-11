@@ -85,26 +85,26 @@
 
     <div class="container my-4">
       <h2 class="text-center">TODOs List</h2>
-      <form>
-        <div class="form-group">
-          <label for="Title">Title</label>
-          <input
-            type="Text"
-            class="form-control"
-            id="Title"
-            aria-describedby="emailHelp"
-          />
-          <small id="emailHelp" class="form-text text-muted"
-            >Add an item to the list.</small
-          >
-        </div>
-        <div class="form-group">
-          <label for="description">Description</label>
-          <textarea class="form-control" id="description" rows="3"></textarea>
-        </div>
+      <div class="form-group">
+        <label for="Title">Title</label>
+        <input
+          type="Text"
+          class="form-control"
+          id="Title"
+          aria-describedby="emailHelp"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >Add an item to the list.</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" rows="3"></textarea>
+      </div>
 
-        <button type="submit" class="btn btn-primary">Add to list</button>
-      </form>
+      <button type="submit" id="Add" class="btn btn-primary">
+        Add to list
+      </button>
 
       <div id="items" class="my-4">
         <h2>your items</h2>
@@ -133,5 +133,18 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      add = document.getElementById("Add");
+      add.addEventListener("click", () => {
+        console.log("Updating List...");
+        tit = document.getElementById("title").value;
+        desc = document.getElementById("description").value;
+        if (LocalStorage.getItem("itemJson") == null) {
+          itemJsonArray = [];
+          itemJsonArray.push([tit, desc]);
+          localStorage.setItem("itemjson", JSON.stringify(itemJsonArray));
+        }
+      });
+    </script>
   </body>
 </html>
