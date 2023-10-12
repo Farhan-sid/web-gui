@@ -117,7 +117,7 @@
               <th scope="col">Actions</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tablebody">
             <tr>
               <th scope="row">1</th>
               <td>Get some coffee</td>
@@ -134,17 +134,41 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      add = document.getElementById("Add");
-      add.addEventListener("click", () => {
+      function update() {
         console.log("Updating List...");
-        tit = document.getElementById("title").value;
+        tit = document.getElementById("Title").value;
         desc = document.getElementById("description").value;
-        if (LocalStorage.getItem("itemJson") == null) {
-          itemJsonArray = [];
-          itemJsonArray.push([tit, desc]);
-          localStorage.setItem("itemjson", JSON.stringify(itemJsonArray));
+        if (localStorage.getItem("ItemsJson") == null) {
+          itemsJsonArray = [];
+          itemsJsonArray.push([tit, desc]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemsJsonArray));
+        } else {
+          itemsJsonArraystr = localStorage.getItem("itemsJson");
+          itemsJsonArray = JSON.parse(itemsJsonArraystr);
+          itemsJsonArray.push([tit, desc]);
+          localStorage.setItem("itemsJson", JSON.stringify(itemsJsonArray));
         }
-      });
+
+        //populate the table
+        tablebody = document.getElementById("tablebody");
+        str = "";
+        itemsJsonArray.forEach((element, index) => {
+          str += `
+            <tr>
+            <th scope="row">${index + 1}</th>
+            <td>${element[0]}</td>
+            <td>${element[1]}</td>
+            <td><button class="btn btn-sm btn-primary" onclick="delete(4)">Delete</button></td>
+            </tr>`;
+        });
+        tablebody.innerHTML = str;
+      }
+      add = document.getElementById("Add");
+      add.addEventListener("click", update);
+      update();
+      function deleted(item) {
+        console.log("Delete", item);
+      }
     </script>
   </body>
 </html>
