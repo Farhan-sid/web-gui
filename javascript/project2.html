@@ -18,7 +18,7 @@
     />
     <style>
       body {
-        font-family: "Roboto Mono", monospace;
+        font-family: "Open Sans", sans-serif;
       }
     </style>
   </head>
@@ -106,6 +106,15 @@
         Add to list
       </button>
 
+      <button
+        type="submit"
+        id="clear"
+        class="btn btn-primary"
+        onclick="clearStorage()"
+      >
+        Clear list
+      </button>
+
       <div id="items" class="my-4">
         <h2>your items</h2>
         <table class="table">
@@ -134,19 +143,30 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function update() {
+      function getAndUpdate() {
         console.log("Updating List...");
         tit = document.getElementById("Title").value;
         desc = document.getElementById("description").value;
-        if (localStorage.getItem("ItemsJson") == null) {
+        if (localStorage.getItem("ItemsJson")) {
           itemsJsonArray = [];
           itemsJsonArray.push([tit, desc]);
           localStorage.setItem("itemsJson", JSON.stringify(itemsJsonArray));
         } else {
           itemsJsonArraystr = localStorage.getItem("itemsJson");
-          itemsJsonArray = JSON.parse(itemsJsonArraystr);
+          itemsJsonArray = JSON.parse(localStorage.getItem("itemsJson")) || [];
           itemsJsonArray.push([tit, desc]);
           localStorage.setItem("itemsJson", JSON.stringify(itemsJsonArray));
+        }
+        update();
+      }
+
+      function update() {
+        if (localStorage.getItem("ItemsJson")) {
+          itemsJsonArray = [];
+          localStorage.setItem("itemsJson", JSON.stringify(itemsJsonArray));
+        } else {
+          itemsJsonArraystr = localStorage.getItem("itemsJson");
+          itemsJsonArray = JSON.parse(localStorage.getItem("itemsJson")) || [];
         }
 
         //populate the table
@@ -158,16 +178,30 @@
             <th scope="row">${index + 1}</th>
             <td>${element[0]}</td>
             <td>${element[1]}</td>
-            <td><button class="btn btn-sm btn-primary" onclick="delete(4)">Delete</button></td>
+            <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td>
             </tr>`;
         });
         tablebody.innerHTML = str;
       }
       add = document.getElementById("Add");
-      add.addEventListener("click", update);
+      add.addEventListener("click", getAndUpdate);
       update();
-      function deleted(item) {
-        console.log("Delete", item);
+      function deleted(itemindex) {
+        console.log("Delete", itemindex);
+        itemsJsonArraystr = localStorage.getItem("itemsJson");
+        itemsJsonArray = JSON.parse(localStorage.getItem("itemsJson")) || [];
+        //Delete itemindex element from the Array
+        itemsJsonArray.splice(itemindex, 1);
+        localStorage.setItem("itemsJson", JSON.stringify(itemsJsonArray));
+        update();
+      }
+
+      function clearStorage() {
+        if (confirm("Do you really want to clear?")) {
+          console.log("Clearing the storage");
+          localStorage.clear();
+          update();
+        }
       }
     </script>
   </body>
