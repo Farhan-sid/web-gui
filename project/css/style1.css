@@ -271,8 +271,8 @@ h2 {
   margin-top: 35px;
   margin-left: 90px;
   cursor: pointer;
-  transform: translate(-93vw);
-  animation: farhan 4s ease-in-out 2s infinite;
+  transform: translate(-2vw);
+  /* animation: farhan 4s ease-in-out 2s infinite; */
 }
 
 @keyframes farhan {
@@ -282,6 +282,48 @@ h2 {
   100% {
     transform: translate(-2vw);
   }
+}
+
+/* button */
+
+.button {
+  position: absolute;
+  margin-top: 136px;
+  box-shadow: 0 1px 3px #888;
+  opacity: 0.5;
+  right: 53px;
+}
+button {
+  height: 88px;
+  width: 42px;
+  font-size: 37px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* button-1 */
+
+.button-1 {
+  position: absolute;
+  margin-top: 136px;
+  box-shadow: 0 1px 3px #888;
+  opacity: 0.5;
+}
+button {
+  height: 88px;
+  width: 42px;
+  font-size: 37px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button :hover {
+  border: 1px solid;
+}
+.button-1 :hover {
+  border: 1px solid;
 }
 
 .box-container2 {
