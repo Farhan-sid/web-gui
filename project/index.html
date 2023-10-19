@@ -190,14 +190,10 @@
         <div class="box-container">
           <h2 class="h2">Popular products in Beauty internationally</h2>
           <span class="button">
-            <button>
-              <i class="fa-solid fa-angle-right"></i>
-            </button>
+            <button class="next" onclick="slide(1)"><i class="fa-solid fa-angle-right"></i></button>
           </span>
           <span class="button-1">
-            <button>
-              <i class="fa-solid fa-angle-left"></i>
-            </button>
+            <button class="prev" onclick="slide(-1)"><i class="fa-solid fa-angle-left"></i></button>
           </span>
           <div class="slider-1">
             <img src=" /frontend/project/img/1.jpg " alt="" />
@@ -590,4 +586,23 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.slider-1 img');
+  
+    function slide(direction) {
+      currentIndex += direction;
+      
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      
+      const translateValue = -currentIndex * 92; // Adjust the width as needed
+      document.querySelector('.slider-1').style.transform = `translateX(${translateValue}vw)`;
+      
+    }
+  </script>
 </html>
