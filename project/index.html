@@ -208,16 +208,22 @@
             <img src=" /frontend/project/img/10.jpg " alt="" />
             <img src=" /frontend/project/img/11.jpg " alt="" />
             <img src=" /frontend/project/img/12.jpg " alt="" />
-          
+            
         </div>
       </div>
 
 <!-- box-container2 -->
       <div class="box-container2">
         <h2 class="h2">Frequently repurchased in Beauty & Personal Care</h2>
+        <span class="button">
+          <button class="next" id="next2"  onclick="slide(1)"><i class="fa-solid fa-angle-right"></i></button>
+        </span>
+        <span class="button-1">
+          <button class="prev" id="prev2" onclick="slide(-1)"><i class="fa-solid fa-angle-left"></i></button>
+        </span>
         <div class="slider-2">
           <img src=" /frontend/project/img/13.jpg " alt="" />
-          <img src=" /frontend/project/img/14.jpg " alt="" />
+          <img src="/frontend/project/img/14.jpg" alt="">
           <img src=" /frontend/project/img/15.jpg " alt="" />
           <img src=" /frontend/project/img/16.jpg " alt="" />
           <img src=" /frontend/project/img/17.jpg " alt="" />
@@ -604,5 +610,7 @@
       document.querySelector('.slider-1').style.transform = `translateX(${translateValue}vw)`;
       
     }
+    
   </script>
+  
 </html>
