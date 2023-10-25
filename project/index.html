@@ -215,10 +215,10 @@
 <!-- box-container2 -->
       <div class="box-container2">
         <h2 class="h2">Frequently repurchased in Beauty & Personal Care</h2>
-        <span class="button">
+        <span class="button1">
           <button class="next" id="next2"  onclick="slide(1)"><i class="fa-solid fa-angle-right"></i></button>
         </span>
-        <span class="button-1">
+        <span class="button2">
           <button class="prev" id="prev2" onclick="slide(-1)"><i class="fa-solid fa-angle-left"></i></button>
         </span>
         <div class="slider-2">
@@ -611,6 +611,26 @@
       
     }
     
+  </script>
+  <script>
+    let currentIndex2 = 0;
+const images2 = document.querySelectorAll('.slider-2 img');
+
+function slide2(direction) {
+  currentIndex2 += direction;
+
+  if (currentIndex2 < 0) {
+    currentIndex2 = images2.length - 1;
+  } else if (currentIndex2 >= images2.length) {
+    currentIndex2 = 0;
+  }
+
+  const translation2 = -currentIndex2 * 100; // Adjust 100 to match the width of your images
+  document.querySelector('.slider-2').style.transform = `translateX(${translation2}%)`;
+}
+
+// Initially, display the first image
+slide2(0);
   </script>
   
 </html>
