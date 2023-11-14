@@ -657,6 +657,9 @@ var obj = {
   age:  "24",
   city: "karachi"
 }
+delete obj.age
+
+
 for(var key in obj){
   console.log(key, obj[key]);
 }
@@ -664,7 +667,13 @@ for(var key in obj){
 setTimeout(function(){
   console.log("2 sec baad chalana")
 },2000);
-    
+
+function abcd(a){
+a();
+}
+abcd(function(){
+  console.log("hey")
+})    
     
   </script>
   
