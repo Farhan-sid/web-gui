@@ -260,6 +260,8 @@ h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .slider-1 {
   width: 100%;
@@ -345,6 +347,8 @@ button {
   margin-top: 15px;
   margin-bottom: 15px;
   overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .slider-2 {
   width: 100%;
