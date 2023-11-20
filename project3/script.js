@@ -4,8 +4,8 @@ var blur = document.querySelector(".cursor-blur")
 document.addEventListener("mousemove",function(dets){
     crsr.style.left = dets.x+"px"
     crsr.style.top = dets.y+"px"
-    blur.style.left = dets.x-250+"px"
-    blur.style.top = dets.y-250+"px"
+    blur.style.left = dets.x-340+"px"
+    blur.style.top = dets.y-340+"px"
 })
 
 gsap.to(".nav",{
@@ -21,14 +21,14 @@ scrollTrigger:{
     scrub:1
 }
 })
-gsap.to(".page2",{
+gsap.to("#main",{
     backgroundColor:"#000",
     scrollTrigger:{
-        trigger:".page2",
+        trigger:"#main",
         scroller:"body",
        // markers:true,
-        start:"top 20%",
-        end:"top 70%",
+        start:"top -20%",
+        end:"top -70%",
         scrub:1
     }
 })
