@@ -2,10 +2,24 @@ var crsr = document.querySelector(".cursor")
 var blur = document.querySelector(".cursor-blur")
 
 document.addEventListener("mousemove",function(dets){
-    crsr.style.left = dets.x+"px"
+    crsr.style.left = dets.x+20+"px"
     crsr.style.top = dets.y+"px"
-    blur.style.left = dets.x-340+"px"
-    blur.style.top = dets.y-340+"px"
+    blur.style.left = dets.x-350+"px"
+    blur.style.top = dets.y-350+"px"
+})
+
+var h4all =document.querySelectorAll(".nav h4")
+h4all.forEach(function(elem){
+elem.addEventListener("mouseenter",function(){
+    crsr.style.scale = 3
+    crsr.style.border = "0.5px solid #fff"
+    crsr.style.backgroundColor ="transparent"
+})
+elem.addEventListener("mouseleave",function(){
+    crsr.style.scale = 1
+    crsr.style.border = "0px solid #95c11e "
+    crsr.style.backgroundColor = "#95c11e "
+})
 })
 
 gsap.to(".nav",{
@@ -30,5 +44,20 @@ gsap.to("#main",{
         start:"top -20%",
         end:"top -70%",
         scrub:1
+    }
+})
+
+gsap.from(".about-us img,.about-us-in",{
+    y:90,
+    opacity:0,
+    duration:1,
+    scrollTrigger :{
+        trigger:".about-us",
+        scroller:"body",
+        // markers:true,
+        start:"top 60%",
+        end:"top 55%",
+        scrub:3
+
     }
 })
