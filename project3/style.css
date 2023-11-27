@@ -329,3 +329,62 @@ video {
   right: 15%;
   bottom: 30%;
 }
+
+/* page4 */
+.page4 {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+}
+
+.page4 h1 {
+  font-size: 108px;
+  position: absolute;
+  font-family: sans-serif;
+  top: -16%;
+  color: #000;
+  /* background-color: red; */
+  -webkit-text-stroke: 2px silver;
+}
+
+.elem {
+  height: 70%;
+  width: 26%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.elem h2 {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  font-size: 40px;
+  position: absolute;
+  z-index: 10;
+}
+
+.elem:hover h2 {
+  color: #fff;
+  background-color: transparent;
+}
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  scale: 1.1;
+}
+
+.elem:hover img {
+  scale: 1;
+}
