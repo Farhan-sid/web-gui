@@ -45,24 +45,59 @@ header {
 .nav-bar {
   height: 70px;
   width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
   /* background-color: blue; */
 }
 
-#menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 70px;
+#item-1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-#item-1 {
-  height: 70px;
-  width: 107px;
-  font-size: 18px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#item-1 li {
+  margin-bottom: 8px; /* Adjust spacing as needed */
+}
+
+#item-1 a {
+  text-decoration: none;
+  color: #333; /* Adjust text color as needed */
+  font-weight: bold;
+}
+
+.item-1-container {
+  text-align: left;
+  position: absolute;
+  height: 142px;
+  width: 1890px;
+  left: -358.375px;
+  background: #fff;
+  top: 100%;
+  z-index: 10;
+  padding: 20px 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 0 0 1px #eaeaea, 0 5px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0 1px #eaeaea, 0 5px 20px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#item-1:hover .item-1-container,
+.item-1-container:hover {
+  opacity: 1;
+}
+
+.sub-menu {
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+  width: 970px;
+  overflow-y: auto;
 }
 
 #item-2 {
@@ -75,6 +110,11 @@ header {
   justify-content: center;
 }
 
+#item-2 a {
+  text-decoration: none;
+  color: #222;
+}
+
 #item-3 {
   height: 70px;
   width: 70px;
@@ -85,6 +125,10 @@ header {
   justify-content: center;
 }
 
+#item-3 a {
+  text-decoration: none;
+  color: #222;
+}
 .nav-searching {
   height: 70px;
   width: 307px;
