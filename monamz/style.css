@@ -77,8 +77,11 @@ header {
 }
 
 #item-1 a {
-  /* text-decoration: none; */
-  font-weight: bold;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #222;
+  /* font-weight: bold; */
 }
 
 .item-1-container {
@@ -135,6 +138,10 @@ header {
   border-bottom: 1px solid #eee;
 }
 
+.a > a {
+  font-size: 16px;
+}
+
 .sub-menu-cn {
   margin-top: 10px;
   font-size: 14px;
@@ -183,9 +190,11 @@ header {
 }
 
 #item-2 a {
-  /* text-decoration: none; */
-  color: #333; /* Adjust text color as needed */
-  font-weight: bold;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #222;
+  /* font-weight: bold; */
 }
 
 .item-2-container {
@@ -234,9 +243,11 @@ header {
 }
 
 #item-3 a {
-  /* text-decoration: none; */
-  color: #333; /* Adjust text color as needed */
-  font-weight: bold;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #222;
+  /* font-weight: bold; */
 }
 
 .item-3-container {
@@ -273,6 +284,7 @@ header {
 .sub-menu li {
   list-style: none;
 }
+
 .nav-searching {
   height: 70px;
   width: 307px;
@@ -348,16 +360,76 @@ header {
   justify-content: center;
 }
 
+.title::before {
+  content: "";
+  border-bottom: 1px solid #dfdfdf;
+  width: 36%;
+}
+
 span {
   margin: 0 0.8em;
   max-width: 100%;
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.title::after {
+  content: "";
+  border-bottom: 1px solid #dfdfdf;
+  width: 36%;
 }
 
 .mt_30 {
-  height: 558px;
+  height: 558.19px;
   width: 1230px;
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 30px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  display: flex;
+}
+
+.cat_space_item {
+  height: 532.19px;
+  width: 410px;
+  /* background-color: red; */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cat_space_item img {
+  height: 380px;
+  width: 380px;
+  margin-bottom: 26px;
+}
+
+.cat_space_item a {
+  text-decoration: none;
+  color: #222;
+  line-height: 1.1;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+.rte_setting {
+  padding: 2px 0px 14px 0px;
+  margin-top: 7px;
+}
+
+.rte_setting p {
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+}
+
+.cat_space_item a > .button.btn {
+  font-size: 14px;
+}
+
+.page2 {
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
 }
