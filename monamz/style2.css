@@ -397,7 +397,7 @@ header {
 .cat_toolbar {
   height: 37px;
   width: 1600px;
-  background: aqua;
+  /* background: aqua; */
   margin-top: 40px;
   margin-bottom: 10px;
   margin-left: -15px;
@@ -417,4 +417,43 @@ header {
   text-decoration: none;
   color: #222;
   font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.fa-solid {
+  font-size: 16px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+.featured {
+  width: 755px;
+  /* background: red; */
+  padding: 0 15px;
+  text-align: -webkit-right;
+}
+
+.shortby_pick {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  width: 190px;
+  border: 1px solid #ddd;
+  width: fit-content;
+  align-items: center;
+}
+
+.txt-dn {
+  padding: 7px 7px 7px 15px;
+  font-size: 14px;
+  color: #222;
+  font-family: "Manrope", sans-serif;
+}
+
+.fa-angle-down {
+  font-weight: 900;
+  font-size: 9px;
+  height: 8px;
+  margin: 0 5px;
+  color: #000;
 }
