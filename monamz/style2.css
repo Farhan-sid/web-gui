@@ -335,7 +335,7 @@ header {
 
 /* nt-container */
 .nt-container {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 /* title-image-bar */
@@ -426,6 +426,10 @@ header {
   margin-right: 3px;
 }
 
+.cat_view {
+  padding: 0 15px;
+}
+
 .featured {
   width: 755px;
   /* background: red; */
@@ -456,6 +460,33 @@ header {
   height: 8px;
   margin: 0 5px;
   color: #000;
+}
+
+.main-row {
+  width: 1600px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row_container {
+  width: 1570px;
+  padding: 0 15px;
+}
+
+.row_contant {
+  width: 1600px;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.pr-animated {
+  width: 370px;
+  height: 628.39px;
+  margin-top: 20px;
+  padding: 0 15px;
 }
 /*  */
 /*  */
