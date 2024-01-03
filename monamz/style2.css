@@ -488,6 +488,76 @@ header {
   margin-top: 20px;
   padding: 0 15px;
 }
+
+.pr {
+  position: relative;
+}
+
+.ho {
+  width: 370px;
+  height: 553.41px;
+}
+
+.ab {
+  width: 370px;
+  height: 553.41px;
+  position: absolute;
+}
+
+.ab:hover .pa {
+  opacity: 1;
+  transition: opacity 0.5s, transform 2s;
+}
+
+.bg {
+  background-image: url(/img1.jpg);
+  background-size: cover;
+  height: 553.41px;
+}
+
+.pa {
+  background-image: url(/img2.jpg);
+  background-size: cover;
+  height: 553.41px;
+  opacity: 0;
+}
+
+.ba {
+  height: 553.41px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.add__w {
+  width: 346px;
+  height: 30px;
+  position: relative;
+  margin: auto;
+  top: 12px;
+}
+
+.wl {
+  width: 30px;
+  height: 23px;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+  opacity: 0;
+  visibility: visible;
+  background-color: #fff;
+  border-radius: 50%;
+  padding-top: 7px;
+  position: absolute;
+}
+
+.fa-regular {
+  font-weight: 400;
+  color: black;
+}
+
+.ba:hover .wl {
+  opacity: 1;
+}
 /*  */
 /*  */
 /* footer */
