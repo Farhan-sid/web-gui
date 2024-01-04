@@ -555,9 +555,65 @@ header {
   color: black;
 }
 
-.ba:hover .wl {
-  opacity: 1;
+.i1 {
+  left: 7px;
 }
+
+.pr:hover .wl {
+  opacity: 1;
+  transition: opacity 0.5s, transform 2s;
+}
+
+.hb {
+  height: 47px;
+  width: 136.25px;
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  padding: 0 5px;
+}
+
+.pk {
+  height: 37px;
+  width: 100%;
+  margin: 5px 0;
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  opacity: 0;
+}
+
+.pr:hover .pk {
+  opacity: 1;
+  transition: opacity 0.5s, transform 2s;
+}
+
+.fa-eye {
+  font-weight: 400;
+  width: 136px;
+  height: 37px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.i2 {
+  opacity: 0;
+  font-size: 18px;
+}
+
+.pk:hover .i2 {
+  opacity: 1;
+  background-color: #000;
+  color: white;
+}
+
 /*  */
 /*  */
 /* footer */
