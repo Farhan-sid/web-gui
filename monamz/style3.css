@@ -350,7 +350,7 @@ header {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(https://pk.saniamaskatiya.com/cdn/shop/collections/pret_a_porter_ribbon_1950x.webp?v=1664949140);
+  background-image: url(https://pk.saniamaskatiya.com/cdn/shop/collections/Bridals_ribbon_1950x.webp?v=1664957132);
   position: absolute;
   top: 26px;
   left: 0px;
@@ -510,13 +510,13 @@ header {
 }
 
 .bg {
-  background-image: url(/img1.jpg);
+  background-image: url(/bridal1.webp);
   background-size: cover;
   height: 553.41px;
 }
 
 .pa {
-  background-image: url(/img2.jpg);
+  background-image: url(/bridal2.webp);
   background-size: cover;
   height: 553.41px;
   opacity: 0;
@@ -838,18 +838,18 @@ input {
 }
 
 /* .facebook_cdn::before {
-  content: "";
-  position: absolute;
-  background: 0 0;
-  border: 6px solid transparent;
-  z-index: 1000001;
-  border-top-color: #996ca4;
-  margin-bottom: -11px;
-  left: calc(50% - 6px);
-  transform: translate3d(0, 0, 0);
-  visibility: hidden;
-  opacity: 0;
-} */
+    content: "";
+    position: absolute;
+    background: 0 0;
+    border: 6px solid transparent;
+    z-index: 1000001;
+    border-top-color: #996ca4;
+    margin-bottom: -11px;
+    left: calc(50% - 6px);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+  } */
 
 .social_contant i {
   font-size: 16px;
