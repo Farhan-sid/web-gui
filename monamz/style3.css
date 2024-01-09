@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 /* header */
 header {
   height: 93px;
@@ -102,8 +108,11 @@ header {
   transition: opacity 0.3s ease-in-out;
 }
 
-#item-1:hover .item-1-container,
-.item-1-container:hover {
+#item-1:hover .item-1-container {
+  opacity: 1;
+}
+
+#item-1:not(:hover) .item-1-container:hover {
   opacity: 1;
 }
 
@@ -504,7 +513,7 @@ header {
   position: absolute;
 }
 
-.ab:hover .pa {
+.pr:hover .pa {
   opacity: 1;
   transition: opacity 0.5s, transform 2s;
 }
@@ -613,6 +622,7 @@ header {
   opacity: 1;
   background-color: #000;
   color: white;
+  transition: 0.3s;
 }
 
 .zp {
