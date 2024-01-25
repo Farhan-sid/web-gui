@@ -469,6 +469,13 @@
             class="search_header mini_search_frm pr js_frm_search"
             role="search"
           >
+            <input type="hidden" name="type" value="product" />
+            <input
+              type="hidden"
+              name="options[unavailable_products]"
+              value="last"
+            />
+            <input type="hidden" name="options[prefix]" value="none" />
             <div class="frm_search_cat mb__20">
               <select name="product-type">
                 <option value="Pert-à-Porter">Pert-à-Porter</option>
@@ -579,12 +586,16 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="btn db fwsb detail_link"></a>
+                <a href="#" class="btn db fwsb detail_link"
+                  >View All
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="monamz.js"></script>
   </body>
 </html>
