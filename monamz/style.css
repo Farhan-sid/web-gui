@@ -684,7 +684,7 @@ input {
 }
 
 .mask-overlay {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -721,7 +721,7 @@ input {
   background-color: white;
   overflow-y: hidden;
   position: fixed;
-  top: 75px;
+  top: 0px;
   bottom: 0;
   width: 340px;
   background-color: #fff;
@@ -736,6 +736,7 @@ input {
   display: block;
   z-index: 500;
   opacity: 0;
+  visibility: hidden;
 }
 
 .flex {
@@ -848,13 +849,11 @@ select {
   position: absolute;
 }
 
-.pe_none {
+.js_btn__search {
   position: relative;
-  left: 250px;
-  top: 0;
-  bottom: 0;
   height: 40px;
   width: 50px;
+  left: 251px;
   background: transparent;
   border: none;
 }
