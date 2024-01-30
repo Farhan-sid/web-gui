@@ -729,8 +729,7 @@ input {
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  transition: transform 0.2s;
-  -webkit-transform: translate3d(104%, 0, 0);
+  transition: 0.2s;
   transform: translate3d(104%, 0, 0);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   display: block;

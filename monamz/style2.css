@@ -569,9 +569,12 @@ header {
   width: 136.25px;
   display: flex;
   position: absolute;
-  left: 30%;
+  left: 50%;
   top: 40%;
   padding: 0 5px;
+  transition: 0.3s;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .pk {
