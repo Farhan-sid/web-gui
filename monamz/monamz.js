@@ -6,7 +6,7 @@ var body = document.querySelector("body")
 sea.addEventListener("click",function(){
     dn.style.opacity = 1
     dn.style.visibility = 'visible'
-    mo.style.opacity =1
+    mo.style.opacity = 1
     mo.style.visibility = 'visible'
     body.style.overflowY = "hidden"
 })
