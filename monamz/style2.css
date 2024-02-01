@@ -438,6 +438,16 @@ header {
   text-align: -webkit-right;
 }
 
+.remove {
+  position: absolute;
+  height: 30px;
+  width: 96px;
+  text-align: center;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .ic_triangle_svg,
 .nt_lt_fake.opended svg.ic_triangle_svg,
 .nt_lt_fake.opended ul {
@@ -469,7 +479,6 @@ svg.ic_triangle_svg {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  cursor: pointer;
 }
 
 .nt_sortby {
@@ -543,6 +552,7 @@ svg.ic_triangle_svg {
   -webkit-overflow-scrolling: touch;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
+  text-align: left;
 }
 
 .wrap_sortby a.selected {
@@ -556,6 +566,12 @@ svg.ic_triangle_svg {
   padding: 8px 15px;
   font-size: 16px;
   color: #878787;
+  transition: 0.3s;
+}
+
+.wrap_sortby a:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: #000;
 }
 
 .shortby_pick {
@@ -1001,4 +1017,202 @@ input {
   color: blue;
   transition: 0.3s;
   transform: translatey(-50%);
+}
+
+.mask-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 400;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.ntpf {
+  position: fixed;
+}
+
+.t__0 {
+  top: 0;
+}
+
+.b__0 {
+  bottom: 0;
+}
+
+.l__0 {
+  left: 0;
+}
+
+.r__0 {
+  right: 0;
+}
+.popup_filter {
+  width: 340px;
+  background-color: white;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  width: 340px;
+  background-color: #fff;
+  left: -354px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  transition: 0.2s;
+  transform: translate3d(104%, 0, 0);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  display: block;
+  z-index: 500;
+  /* opacity: 0;
+  visibility: hidden; */
+}
+
+.flex {
+  display: flex;
+}
+
+.h__100 {
+  height: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.section_nt_filter {
+  /* padding: 5px 0 5px 20px; */
+  border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section_nt_filter i {
+  line-height: 0.9;
+}
+
+.bgb {
+  background-color: #000;
+  color: white;
+}
+
+.h3 {
+  padding: 5px 0 5px 20px;
+  border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(129, 129, 129, 0.2);
+  justify-content: space-between;
+  min-height: 50px;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.al_center {
+  align-items: center;
+}
+
+.fl_between {
+  height: 61px;
+  justify-content: space-between;
+}
+
+.tu {
+  text-transform: uppercase;
+}
+
+.fs__16 {
+  font-size: 16px;
+  font-family: Playfair Display;
+  font-weight: 600;
+}
+
+.mg__0 {
+  margin: 0;
+}
+
+.cd {
+  font-weight: 600;
+}
+
+.close_pp {
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  font-size: 25px;
+  cursor: pointer;
+  line-height: 0.4;
+}
+
+.wrap_filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widget {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 285px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.widget-title {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.widget ul li {
+  line-height: 25px;
+  list-style: none;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.nt_filter_block a {
+  color: #222;
+  text-transform: capitalize;
+}
+
+ul.nt_filter_styleck > li > a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+ul.nt_filter_styleck > li > a:before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border: 1px solid #d4d6d8;
+  background: #fff;
+  box-shadow: 0 1px rgba(212, 214, 216, 0.4);
+  border-radius: 2px;
+  -webkit-appearance: none;
+}
+
+.count_vr_filter {
+  color: #999;
+  margin-left: 5px;
 }
