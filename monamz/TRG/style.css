@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+  font-family: FreightSans, sans-serif;
+}
+
+.header {
+  height: 76px;
+  align-items: center;
+  background: #fff;
+  display: flex;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s, transform 0.3s ease;
+  width: 100vw;
+  z-index: 6;
+}
+
+.header:hover {
+  background-color: #000;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1480px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.header__logo {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.header__logo svg:first-of-type {
+  margin-right: 15px;
+}
+
+.header__nav {
+  display: block;
+}
+
+.header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav ul li.listings {
+  position: relative;
+}
+
+.header__nav ul li {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header__nav ul li a {
+  color: #fff;
+}
+
+.header__nav ul li a {
+  color: #21242f;
+  display: block;
+  padding: 10px 0 10px 52px;
+  text-decoration: none;
+}
+
+.header__nav ul li .dropdown {
+  text-transform: none;
+}
+
+.dropdown--listings {
+  left: 20px;
+  padding: 30px;
+  top: 59px;
+  width: 200px;
+}
+
+.dropdown {
+  background: #fff;
+  /* left: 0; */
+  opacity: 0;
+  /* padding: 50px 0; */
+  position: absolute;
+  /* top: 76px; */
+  visibility: hidden;
+  /* width: 100vw; */
+  transition: 0.3s;
+}
+
+.dropdown--listings ul {
+  display: block;
+}
+
+.header__nav ul li .dropdown {
+  text-transform: none;
+}
+
+.header__nav ul li .dropdown li {
+  margin: 0;
+}
+
+.header__nav ul li {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+ul {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 350;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+}
+
+ul li {
+  padding-left: 0;
+}
+
+.dropdown--listings ul li a {
+  padding-left: 0;
+}
+
+.header__nav ul li a {
+  color: #fff;
+  display: block;
+  /* padding: 10px 0 10px 52px; */
+  text-decoration: none;
+}
+
+.listings:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.listings:hover .dropdown ul li a {
+  color: #000;
+}
