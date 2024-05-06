@@ -44,14 +44,6 @@ fil.addEventListener("click",function(){
     body.style.overflowY = "hidden"
 })
 
-clo.addEventListener("click",function(){
-    pf.style.opacity = 0
-    pf.style.visibility = 'hidden'
-    mo.style.opacity = 0
-    mo.style.visibility = 'hidden'
-    body.style.overflowY = "visible"
-})
-
 sea.addEventListener("click",function(){
     dn.style.opacity = 1
     dn.style.visibility = 'visible'
@@ -59,6 +51,15 @@ sea.addEventListener("click",function(){
     mo.style.visibility = 'visible'
     body.style.overflowY = "hidden"
 })
+
+clo.addEventListener("click",function(){
+    dn.style.opacity = 0
+    dn.style.visibility = 'hidden'
+    mo.style.opacity = 0
+    mo.style.visibility = 'hidden'
+    body.style.overflowY = "visible"
+})
+
 
 cd.addEventListener("click",function(){
     dn.style.opacity = 0

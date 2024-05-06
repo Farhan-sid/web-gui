@@ -1,0 +1,2927 @@
+.ImpreseeSearchBarTools {
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+    color: black;
+    margin: 5px 20px;
+}
+.ImpreseeTool{
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    display: flex;
+    flex:1;
+    cursor: pointer;
+    padding: 0.4em;
+    margin: 0 0.3em;
+    max-width: 250px;
+    background-color: #EEE;
+    margin: 5px;
+}
+.ImpreseeTool:hover {
+    background-color: #EEE;
+}
+.ImpreseeTool img {
+    max-height: 22px;
+    margin: 0;
+    margin-right: 0.5em;
+}
+.ImpreseeTool span {
+    line-height: 22px;
+}
+
+.ImpreseeNoResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  max-width: 420px;
+  margin: auto;
+  margin-top: 10px;
+  color: black !important;
+}
+.ImpreseeNoResultsMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ImpreseeQueryText {
+  font-weight: bold;
+  font-size: 18px;
+}
+.ImpreseeEmbarassedFace {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.ImpreseeTryAgain {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(238, 238, 238, 0.3);
+  text-align: center;
+}
+.ImpreseeTryAgain h3 {
+  margin-top: 0;
+  color: black !important;
+  font-size: 1.17em;
+}
+.ImpreseeTryAgain .ImpreseeSearchBarTools {
+  margin: 0;
+  width: 100%;
+}
+.ImpreseeTryAgain .ImpreseeSearchBarTools .ImpreseeTool {
+  font-size: 0.8em;
+}
+.ImpreseeImageSearchTriggerContainer {
+  position: relative;
+}
+
+.ImpreseeImageSearchTrigger {
+  position: absolute;
+  z-index: 10;
+  top: -6px;
+  left: -6px;
+  background-color: #464646;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ImpreseeImageSearchTrigger .ImpreseeImageSearchTriggerImage {
+  height: 65%!important;
+  width: 65%!important;
+  margin: 0px!important;
+}
+.ImpreseeActivateSearchButton {
+  z-index: 9999998;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 3px 3px 3px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 3px 3px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 3px 3px 3px rgba(0, 0, 0, 0.12);
+}
+.ImpreseeActivateSearchButton.TopLeft{
+  left: 25px;
+  top: 15% !important;
+}
+.ImpreseeActivateSearchButton.MiddleLeft{
+  left: 25px;
+  top: 50% !important;
+}
+.ImpreseeActivateSearchButton.BottomLeft{
+  left: 25px;
+  top: 85% !important;
+}
+.ImpreseeActivateSearchButton.TopRight{
+  right: 25px;
+  top: 15% !important;
+
+}
+.ImpreseeActivateSearchButton.MiddleRight{
+  right: 25px;
+  top: 50% !important;
+}
+.ImpreseeActivateSearchButton.BottomRight{
+  right: 25px;
+  top: 85% !important;
+}
+.ImpreseeActivateSearchButton img {
+  height: 45px;
+  width: 45px;
+  margin: 0;
+}
+
+.ImpreseeCompleteSearchBar {
+  display: flex;
+  padding: 0 0.2em;
+  font-size: 1.5em;
+  background-color: white;
+  line-height: 1.5em;
+  height: 50px;
+  z-index: 99999;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(194, 194, 194, 1);
+  box-shadow: 0px 3px 6px 0px rgba(194, 194, 194, 1);
+}
+.ImpreseeCompleteSearchBar button {
+  padding: 0 !important;
+}
+
+.ImpreseeSearchBarButton {
+  max-width: 30px;
+}
+.ImpreseeSearchBarButton img {
+  margin: 0;
+  max-height: 30px;
+}
+.ImpreseeCloseSearchBarButton {
+  margin: 0 10px;
+  max-width: 25px;
+}
+.ImpreseeCloseSearchBarButton img {
+  height: 30px;
+  margin: 10px auto;
+  max-width: 100%;
+}
+.ImpreseeCompleteSearchBar input {
+  border: none;
+  font-size: 16px;
+  flex: 1;
+  text-indent: 1em;
+  color: black;
+  background-color: white;
+  max-width: calc(100% - 120px);
+}
+.ImpreseeCompleteSearchBar input:focus {
+  outline: none;
+}
+.ImpreseeCompleteSearchBar button {
+  border: none;
+  background-color: white;
+  width: 30px;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  height: auto;
+  min-height: auto;
+}
+.ImpreseeCompleteSearchBar button.ImpreseeSearchBarButton {
+  margin-right: 1em;
+  flex-basis: 3em;
+  display: flex;
+  align-items: center;
+  margin: 10px 6px;
+  height: auto;
+  min-height: auto;
+}
+.ImpreseeFullResultsModalSearchBarContainer
+  button.ImpreseeCloseSearchBarButton {
+  pointer-events: none;
+  display: flex;
+}
+
+.ImpreseeFullResultsModalSearchBarContainer .ImpreseeCompleteSearchBar {
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  height: 40px;
+}
+.ImpreseeFullResultsModalSearchBarContainer button {
+  padding: 0 !important;
+}
+.ImpreseeFullResultsModalSearchBarContainer .ImpreseeCompleteSearchBar .ImpreseeCloseSearchBarButton img {
+  margin: 4px auto;
+}
+.ImpreseeFullResultsModalSearchBarContainer .ImpreseeCompleteSearchBar input {
+  text-indent: 0.5em;
+}
+.ImpreseeFullResultsModalSearchBarContainer {
+  position: absolute;
+  width: calc(100% - 90px);
+  left: 20px;
+  top: 40px;
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeCompleteSearchBar button.ImpreseeSearchBarButton {
+    margin: 12px 6px;
+  }
+}
+.ImpreseeSearchBarOverlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  z-index: 9999998;
+  top: 0;
+  left: 0;
+  background-color: #f9f9f9;
+}
+.ImpreseeSearchBarOverlay header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.ImpreseeSearchBarOverlay .ImpreseeCompleteSearchBar {
+  box-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.ImpreseeGeneralModalOverlay {
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  padding: 1.2rem;
+}
+.ImpreseeGeneralModal {
+  position: relative;
+  padding: 1.2rem;
+  background: #ffffff;
+  background-clip: padding-box;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+.ImpreseeGeneralModalCenter {
+  margin: auto;
+}
+.ImpreseeGeneralModalCloseButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+}
+.ImpreseeGeneralModalCloseIcon {
+}
+.ImpreseeGeneralModalTransitionEnter {
+  opacity: 0.01;
+}
+.ImpreseeGeneralModalTransitionEnterActive {
+  opacity: 1;
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ImpreseeGeneralModalTransitionExit {
+  opacity: 1;
+}
+.ImpreseeGeneralModalTransitionExitActive {
+  opacity: 0.01;
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeGeneralModal {
+    max-width: 800px;
+  }
+}
+
+.ImpreseeClearCanvasButton {
+  position: absolute;
+  margin: 1rem;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+.ImpreseeTrashCanButton {
+  width: 100%;
+  height: auto;
+}
+.ImpreseeSearchBySketchButton {
+  height: auto;
+  font-size: 1.2em !important;
+  font-weight: bold;
+  width: auto;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 18px;
+  min-width: 10em;
+  cursor: pointer;
+}
+.ImpreseeSearchBySketchBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.ImpreseePoweredBy {
+  max-height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .ImpreseeClearCanvasButton {
+    position: relative;
+    margin: 0;
+    z-index: 999;
+    width: auto;
+    cursor: pointer;
+    order: 3;
+  }
+  .ImpreseeTrashCanButton {
+    width: auto;
+    height: 100%;
+  }
+  .ImpreseeSearchBySketchButton {
+    height: 3em;
+    line-height: 3em;
+    border-radius: 2em;
+    min-width: 11em;
+  }
+}
+/*Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ImpreseeSearchBySketchBar {
+    padding: 10px;
+  }
+}
+
+.cropper-point {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+.cropper-line {
+  background-color: white;
+}
+.cropper-view-box {
+  outline: 2px solid white;
+  outline-color: white;
+}
+.cropper-point.point-e {
+  right: -15px;
+  margin-top: -15px;
+}
+.cropper-point.point-n {
+  top: -15px;
+  margin-left: -15px;
+}
+.cropper-point.point-w {
+  left: -15px;
+  margin-top: -15px;
+}
+.cropper-point.point-s {
+  bottom: -15px;
+  margin-left: -15px;
+}
+.cropper-point.point-ne {
+  top: -15px;
+  right: -15px;
+}
+.cropper-point.point-nw {
+  top: -15px;
+  left: -15px;
+}
+.cropper-point.point-sw {
+  bottom: -15px;
+  left: -15px;
+}
+.cropper-point.point-se {
+  right: -15px;
+  bottom: -15px;
+  width: 30px !important;
+  height: 30px !important;
+  opacity: 1;
+}
+.cropper-container.cropper-bg,
+.cropper-wrap-box {
+  background-color: white;
+}
+.ImpreseeGeneralModal .cropper-canvas {
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+.ImpreseeCropperButtonContainer {
+  display: flex;
+  height: 30px;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.ImpreseeSearchByPhotoButton {
+  height: auto;
+  width: auto;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  min-width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ImpreseeChangeImageContainer {
+  background-color: rgb(229, 229, 229);
+  border-radius: 15px;
+  min-width: 50px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.ImpreseeChangeImage {
+  height: 25px !important;
+  width: auto;
+  cursor: pointer;
+}
+.ImpreseePoweredBy {
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+}
+.ImpreseeLoadImageContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ImpreseeClickOrDragAndDrop {
+  height: 80%;
+  width: 80%;
+  position: relative;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: #cccccc;
+  border-width: 2px;
+  background-color: #f2f2f2;
+}
+.ImpreseeDragAndDropMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+  cursor: pointer;
+}
+.ImpreseeDragAndDropMessageContainer {
+  width: 70%;
+  text-align: center;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ImpreseeDragAndDropSubtitle {
+  font-size: 1em;
+}
+.ImpreseeDragAndDropImage {
+  max-width: 100%;
+}
+@media only screen and (min-width: 360px) {
+  .ImpreseeChangeImageContainer {
+    min-width: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ImpreseeDragAndDropImage {
+    width: 40%;
+    max-width: 100%;
+  }
+  .ImpreseeCropperButtonContainer {
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ImpreseeSearchByPhotoButton {
+    height: 50px;
+    border-radius: 25px;
+    line-height: 50px;
+    min-width: 200px;
+    font-size: 1.3em;
+  }
+  .ImpreseeChangeImageContainer {
+    min-width: 200px;
+    height: 50px;
+    border-radius: 25px;
+  }
+}
+/*Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ImpreseeCropperButtonContainer {
+    padding: 10px;
+  }
+}
+
+.ImpreseeModal.hidden {
+  display: none;
+}
+.ImpreseeModal .ImpreseeModalCloseButton.ImpreseeHiddenCloseIcon {
+  opacity: 0;
+  pointer-events: none;
+}
+.ImpreseeModal {
+  height: 100%;
+  width: 100%;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+.ImpreseeModalOverlay {
+  z-index: 99999999999999;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.ImpreseeModal .ImpreseeModalCloseButton {
+  cursor: pointer;
+  opacity: 1;
+  z-index: 100;
+  display: flex !important;
+  position: absolute !important;
+  min-width: 35px !important;
+}
+.ImpreseeGeneralModalCloseIcon {
+  fill: black !important;
+}
+.ImpreseeModal .ImpreseeLoadingScreen {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.ImpreseeEmbeddedResults .ImpreseeModal .ImpreseeLoadingScreen {
+  min-height: 70vh;
+}
+.ImpreseeMobile .ImpreseeEmbeddedResults{
+  overflow: hidden;
+}
+.ImpreseeModal .ImpreseeLoadingScreen img {
+  width: auto !important;
+}
+#ImpreseeModalID > div {
+  height: 100%;
+}
+#ImpreseeModalID div {
+  font-size: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeModal {
+    height: calc(100vh - 108px);
+    margin: 30px auto;
+    max-width: 80%;
+    min-height: 500px;
+    overflow: hidden;
+  }
+  .ImpreseeModal.ImpreseeMobile {
+    margin: 0;
+    height: 100vh;
+  }
+}
+
+.ImpreseeList,
+.ImpreseeGrid {
+  margin: 0;
+  padding: 0;
+}
+.ImpreseeGrid .ImpreseeItem {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 16em;
+}
+.ImpreseeList .ImpreseeItem {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0;
+  position: relative;
+}
+.ImpreseeImageContainer {
+  height: 120px;
+  text-align: center;
+  display: flex;
+}
+.ImpreseeGrid .ImpreseeImageContainer {
+  margin: auto;
+  height: 150px;
+}
+.ImpreseeList .ImpreseeImageContainer {
+  max-width: 100px;
+}
+.ImpreseeImageContainer > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.ImpreseeItemImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+.ImpreseeList .ImpreseeItemImage {
+  border-right-color: #eee;
+  border-right-style: solid;
+  border-right-width: 1px;
+  padding-right: 5px;
+  width: 120px;
+}
+.ImpreseeNormalPrice {
+  text-decoration: line-through;
+  font-weight: normal;
+  font-size: 0.8em;
+  min-height: 1em;
+  text-align: initial;
+  max-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-indent: 0.5em;
+  color: #666;
+}
+.ImpreseeList .ImpreseeNormalPrice {
+  margin-right: 10px;
+  text-indent: 0;
+  font-size: 0.7em;
+}
+.ImpreseePrice {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  text-align: initial;
+  font-size: 0.85em;
+}
+.ImpreseeList .ImpreseePrice {
+  font-size: 1em;
+}
+
+.ImpreseeTitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+  max-height: 3em;
+  min-height: 1em;
+  color: #6a6056;
+  font-weight: bold;
+  text-align: initial;
+  font-size: 0.85em;
+}
+@supports (-webkit-line-clamp: 2) {
+  .ImpreseeTitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: initial;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      height: 2.4em;
+      line-height: 1.2em;
+    }
+}
+
+.ImpreseeTexts {
+  padding: 5px;
+  height: 50px;
+  padding-bottom: 0;
+  overflow: hidden;
+  flex: 110px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.ImpreseeList .ImpreseeTexts {
+  padding: 0 3%;
+  justify-content: space-between;
+  height: auto;
+  flex: auto;
+}
+.ImpreseeGrid .ImpreseeTexts {
+  padding: 7% 5%;
+  justify-content: space-between;
+  border-top-color: #eee;
+  border-top-style: solid;
+  border-top-width: 1px;
+  height: auto;
+}
+
+.ImpreseeProduct {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eee;
+}
+.ImpreseeGrid .ImpreseeProduct {
+  margin: 7px;
+}
+.ImpreseeList .ImpreseeProduct {
+  margin: 15px 15px;
+  position: relative;
+}
+.ImpreseeGrid .ImpreseeProductLink {
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  padding: 0 10px;
+  position: relative;
+}
+.ImpreseeProductPrices {
+  display: flex;
+  flex: 1;
+}
+.ImpreseeGrid .ImpreseeProductPrices {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.ImpreseePromotedProduct .ImpreseeProductPrices {
+  flex-direction: row;
+  align-items: center;
+}
+.ImpreseeList .ImpreseeProductPrices {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ImpreseeGetProductContainer {
+  display: flex;
+  margin: 5% 0;
+  min-height: 2.5em;
+  align-items: flex-end;
+}
+.ImpreseeList .ImpreseeGetProductContainer {
+  margin: 0;
+  margin-top: 30px;
+}
+.ImpreseeDiscountPercentage {
+  padding: 2px 5px;
+  align-self: flex-end;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.3em;
+  font-size: 1em;
+  margin: 5px 0;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.ImpreseeList .ImpreseeDiscountPercentage {
+  position: absolute;
+  font-size: 1em;
+  bottom: 5px;
+  right: 10px;
+}
+.ImpreseeList .ImpreseeNormalPriceAndDiscount .ImpreseeNormalPrice {
+  margin-right: 10px;
+}
+.ImpreseeList .ImpreseeNormalPriceAndDiscount {
+  display: flex;
+  align-items: center;
+}
+.ImpreseeOnSaleSign {
+  position: absolute;
+  left: 0;
+  border-top-style: solid;
+  right: 0;
+  color: white;
+  font-size: 1em;
+  border-width: 3px;
+  font-weight: bold;
+  z-index: 999;
+  line-height: 1em !important;
+}
+.ImpreseeOnSaleSign span {
+  padding: 0 7px;
+  border-bottom-right-radius: 0.3em;
+  line-height: 1em !important;
+}
+.ImpreseeList .ImpreseeOnSaleSign span {
+  position: absolute;
+  left: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0.3em;
+  font-size: 1em !important;
+}
+@media only screen and (min-width: 768px) {
+  .ImpreseeList .ImpreseeItemImage {
+    width: 170px;
+  }
+  .ImpreseeGrid .ImpreseeItem {
+    min-height: 20em;
+  }
+  .ImpreseeList .ImpreseeImageContainer {
+    max-width: 250px;
+  }
+  .ImpreseeImageContainer {
+    min-height: 120px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeGrid .ImpreseeProduct {
+    margin: 5px;
+  }
+  .ImpreseeList .ImpreseeOnSaleSign span {
+    right: 0;
+    left: auto;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0.3em;
+    font-size: 1.2em !important;
+    min-height: 1.2em;
+  }
+  .ImpreseeList .ImpreseePrice {
+    font-size: 2em;
+  }
+  .ImpreseeList .ImpreseeNormalPrice {
+    font-size: 1.1em;
+  }
+  .ImpreseeList .ImpreseeDiscountPercentage {
+    position: relative;
+    font-size: 1.1em !important;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1680px) {
+  .ImpreseeGrid .ImpreseeItem {
+    min-height: 17.5em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .ImpreseeGrid .ImpreseeItem {
+    min-height: 16em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ImpreseeGrid .ImpreseeItem {
+    min-height: 16em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .ImpreseeGrid .ImpreseeItem {
+    min-height: 20em;
+  }
+}
+
+.ImpreseeSimpleProduct {
+  text-decoration: none;
+  margin: 5px;
+  padding-top: 5px;
+  max-width: 170px;
+  border-radius: 0.5em;
+  min-width: 130px;
+  position: relative;
+  height: 220px;
+}
+.ImpreseeSimpleProduct:hover {
+  background-color: #eee;
+}
+.ImpreseeSimpleProduct .ImpreseeItem {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.ImpreseeSimpleProduct .ImpreseeItemPromoted {
+  border: 2px solid #EEE;
+  border-left: 5px solid;
+  position: relative;
+}
+.ImpreseeSimpleProduct .ImpreseeItemPromotedCorner {
+  position: absolute;
+  height: 0;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0px 0px 30px 30px;
+  border-color: transparent transparent red;
+}
+.ImpreseeSimpleProduct .ImpreseeItemPromotedCorner .ImpreseePromotedStar {
+  position: absolute;
+  right: 2px;
+  top: 12px;
+  height: 15px;
+  width: 15px;
+  mix-blend-mode: multiply;
+}
+.ImpreseeSimpleProduct .ImpreseeTexts {
+  height: max-content;
+  max-height: 90px;
+  justify-content: space-between;
+}
+.ImpreseeSimpleProduct .ImpreseeProductPrices {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  margin-top: 4px;
+}
+.ImpreseeSimpleProduct .ImpreseeAddToCart {
+  line-height: 20px;
+  min-height: 20px;
+  margin: 5px;
+}
+.ImpreseeSimpleProduct .ImpreseeAddToCart span{
+  line-height: 20px;
+}
+.ImpreseeSimpleProduct .ImpreseeProductPrices .ImpreseePrice {
+  margin-left: 0.5em;
+  order: 1;
+}
+.ImpreseeSimpleProduct .ImpreseeProductPrices .ImpreseeNormalPrice {
+  text-indent: 0;
+}
+.ImpreseeSimpleProduct .ImpreseeGetProductContainer {
+  min-height: auto;
+  margin: 2px 0;
+}
+.ImpreseeSimpleProduct .ImpreseeDiscountPercentage{
+  bottom: auto;
+  top: 10px;
+}
+.ImpreseeSimpleProduct .ImpreseeTitle {
+  line-height: 1.1em;
+  flex: 1;
+  min-height: 17px;
+}
+@supports (-webkit-line-clamp: 2) {
+  .ImpreseeSimpleProduct .ImpreseeTitle  {
+      height: 2.4em;
+      line-height: 1.2em;
+    }
+}
+
+.ImpreseeOnSale {
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+  width: -moz-max-content;
+}
+@media only screen and (min-width: 769px) {
+  .ImpreseeSimpleProduct .ImpreseeProductPrices {
+      flex-direction: row;
+    }
+  .ImpreseeSimpleProduct .ImpreseeImageContainer {
+    flex: 3;
+    max-height: 60%;
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+  }
+  .ImpreseeSimpleProduct .ImpreseeImageContainer img {
+    margin: auto;
+    height: 100px;
+  }
+}
+
+.ImpreseeAddToCart{
+    padding: 5px;
+    min-height: 30px;
+    margin-bottom: 7%;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.ImpreseeAddToCart span {
+    line-height: 30px;
+    color: #000;
+}
+.ImpreseeModal.hidden {
+  display: none;
+}
+.ImpreseeModal .ImpreseeModalCloseButton.ImpreseeHiddenCloseIcon {
+  opacity: 0;
+}
+.ImpreseeHide {
+  display: none !important;
+}
+.ImpreseeModal {
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  width: 100%;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+.ImpreseeModalOverlay {
+  padding: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.ImpreseeModal .ImpreseeModalCloseButton {
+  cursor: pointer;
+  opacity: 1;
+  z-index: 100;
+}
+#ImpreseeModalIDResults>div,
+#ImpreseeTextResultsModalId>div {
+  height: 100%;
+}
+.ImpreseeEmbeddedResults #ImpreseeModalIDResults > div,
+.ImpreseeEmbeddedResults #ImpreseeTextResultsModalId > div {
+  height: max-content;
+}
+
+.ImpreseeModalOverlay.ImpreseeEmbeddedResults {
+  background: white;
+  min-height: auto;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ImpreseeErrorScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+.ImpreseeModal.ImpreseeEmbeddedResults {
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: hidden;
+  height: auto;
+  box-shadow: 0 0 0 0;
+}
+.ImpreseeMobile.ImpreseeModal.ImpreseeEmbeddedResults {
+  height: max-content;
+}
+.ImpreseeModalOverlay.ImpreseeEmbeddedResults .ImpreseeErrorScreen {
+  margin-top: 50px;
+}
+@media only screen and (min-width: 769px) {
+  .ImpreseeModal {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeModal {
+    height: calc(100vh - 108px);
+    margin: 30px auto;
+    max-width: 80%;
+    min-height: 500px;
+    overflow: hidden;
+  }
+  .ImpreseeModal.ImpreseeEmbeddedResults {
+    position: relative;
+    box-shadow: 0 0 0 0;
+    height: auto;
+    max-width: 80%;
+  }
+  .ImpreseeGeneralModalOverlay.ImpreseeModalOverlay.ImpreseeEmbeddedResults {
+    bottom: auto;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(201, 199, 201, 1);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(201, 199, 201, 1);
+    box-shadow: 0px 10px 10px 0px rgba(201, 199, 201, 1);
+  }
+}
+
+.ImpreseeDropDownContainer {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: white;
+    z-index: 99999999999998;
+    -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.25),
+      0 0 20px 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.25),
+      0 0 20px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.25),
+      0 0 20px 0 rgba(255, 255, 255, 0.5);
+}
+.ImpreseeDropDownContainer.ImpreseeMobile {
+  font-size: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  flex-direction: column;
+  background-color: white;
+  -webkit-overflow-scrolling: touch;
+  
+}
+.ImpreseeDropDownContainer section {
+  padding: 0;
+}
+.ImpreseeDropDownContainer header {
+  position: relative !important;
+  background: white !important;
+}
+.ImpreseeDropDownResultsDesktop {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  align-items: stretch;
+}
+.ImpreseeDropDownResultsDesktopUpper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ImpreseeDropDownResultsDesktopLower {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.ImpreseeDropDownSuggestionsDiv{
+
+}
+.ImpreseeDropDownProductsDiv{
+  min-width: 420px;
+}
+.ImpreseeDropDownSection {
+  position: relative;
+}
+.ImpreseeDropDownContainer .ImpreseeDropDownSectionHeader {
+  color: #6d6d6d;
+  font-weight: bolder;
+  width: 100%;
+  background: white !important;
+}
+.ImpreseeDropDownContainer .ImpreseeDropDownSectionHeader .ImpreseeTitle {
+  margin: 0.1em 0.5em;
+  display: inline-block;
+}
+.ImpreseeHorizontalScroll {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.ImpreseeHorizontalScroll::-webkit-scrollbar {
+  display: none;
+}
+.ImpreseeHorizontalScroll .ImpreseeMobileInstantScroll {
+  display: flex;
+  flex-direction: row;
+}
+.ImpreseeHorizontalScroll .ImpreseeMobileInstantGrid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 33%) !important;
+  grid-auto-flow: row !important;
+  padding: 5px !important;
+}
+.ImpreseeSeeAll {
+  font-weight: bold;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ImpreseeSeeAll span {
+  margin-right: 20px;
+  text-decoration-line: underline;
+}
+.ImpreseeSeeAll img {
+  max-height: 1.2em;
+  margin: 0;
+  opacity: 0.6;
+}
+.ImpreseeNoTextQuery {
+  margin: 20px;
+}
+.ImpreseeBlur {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 10px;
+  width: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  filter: blur(10px);
+}
+.ImpreseeDropDownVisualSearchBubbleContainer {
+  position: absolute;
+  top: 0;
+  right: -130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ImpreseeDropDownVisualSearchBubble {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 60px;
+  border: 2px solid #DDD;
+  box-shadow: -5px 5px 20px -10px #000000;
+  margin-right: 0;
+  z-index: 2;
+}
+.ImpreseeDropDownVisualSearchBubbleImg {
+  height: 36px;
+  width: 36px;
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeBlur {
+    display: none;
+  }
+  .ImpreseeDropDownSectionHeader .ImpreseeSearchResultsTitleBar {
+    display: flex;
+    margin: 15px 20px 10px 20px;
+    padding-left: 0;
+  }
+  .ImpreseeDropDownArrow {
+    position: absolute;
+    float: left;
+    overflow: hidden;
+    width: 19px;
+    z-index: 2147483647;
+  }
+  .ImpreseeDropDownArrowOuter {
+    border-right: 10px solid rgba(255, 255, 255, 0);
+    border-left: 10px solid rgba(255, 255, 255, 0);
+    border-bottom: 15px solid #dddddd;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: inline-block;
+  }
+  .ImpreseeDropDownArrowInner {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: inline-block;
+    border-right: 8px solid rgba(255, 255, 255, 0);
+    border-left: 8px solid rgba(255, 255, 255, 0);
+    border-bottom: 13px solid #ffffff;
+  }
+  .ImpreseeProductsContainer {
+    min-width: 420px;
+    margin: 5px 0;
+  }
+  .ImpreseeProductsContainer .ImpreseeErrorScreen {
+    padding: 30px !important;
+  }
+  .ImpreseeSimpleProductGrid {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+.ImpreseePhotoSearchButtonContainer,.ImpreseeSketchSearchButtonContainer {
+  display: flex;
+}
+.ImpreseeLabelContainer {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+.ImpreseeInnerLabelContainer {
+  border: solid;
+  padding-left: 15px;
+  margin-left: -10px;
+  border: solid;
+  padding: 3px;
+  padding-left: 15px;
+  margin-left: -10px;
+  border-left-style: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-width: 2px;
+  background-color: white;
+  z-index: 1;
+}
+.ImpreseeLabelHidden {
+  visibility: hidden;
+}
+
+.ImpreseePromotedBanner{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  cursor: pointer;
+}
+/* Mobile first!*/
+.ImpreseeResults {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.ImpreseeResults .ImpreseeQuery {
+  display: flex;
+  flex-direction: column;
+  max-height: 70%;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.ImpreseeResults .ImpreseeQuery.ImpreseeVerticalQuery {
+  max-height: 60vh;
+  margin: 60px auto 20px;
+}
+.ImpreseeResults .ImpreseeQuery.ImpreseeHorizontalQuery {
+  max-height: 60vh;
+  margin: 60px auto 20px;
+}
+.ImpreseeResults .ImpreseeResultsGrid {
+  display: flex;
+  flex-direction: column;
+  padding: 0 7px;
+}
+.ImpreseeSearchResultsTitleBar {
+  height: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.ImpreseeBar {
+  width: 4px;
+  margin-right: 5px;
+}
+.ImpreseeSearchResultsTitleBar img {
+  margin-right: 10px;
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeResults .ImpreseeQuery.ImpreseeVerticalQuery {
+    max-height: 40vh;
+    margin-top: 50px;
+  }
+  .ImpreseeResults .ImpreseeQuery.ImpreseeHorizontalQuery {
+    margin-top: 50px;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeResults {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+  }
+  .ImpreseeResults.ImpreseeEmbeddedResults {
+    height: auto;
+  }
+  .ImpreseeSearchResultsTitleBar {
+    display: none;
+  }
+  .ImpreseeResults .ImpreseeQuery {
+    flex: 1;
+    top: 0px;
+    padding: 0px 10px;
+    margin: 50px auto;
+    position: relative;
+    text-align: left;
+    max-width: 33%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeResults .ImpreseeResultsGrid {
+    flex: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .ImpreseeResults.ImpreseeEmbeddedResults .ImpreseeResultsGrid {
+    overflow-y: hidden;
+  }
+  .ImpreseePoweredBy{
+    position: absolute;
+    bottom: 20px;
+    width: 33%;
+  }
+}
+
+.ImpreseeSuggestionsDivDesktop {
+  width: 280px;
+  border-right: 1px solid #dadada;
+}
+
+.ImpreseeSuggestionsDivMobile {
+  width: 100%;
+  max-height: 120px;
+  border-bottom: 1px solid #dadada;
+  overflow-y: hidden;
+}
+
+.ImpreseeSuggestionsContentMobile {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding-top: 15px;
+}
+
+.ImpreseeSuggestionsContentDesktop {
+  padding: 4px 20px 10px 20px;
+}
+
+.ImpreseeSearchSuggestion {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 20px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 10px;
+  border-color: #C1C1C1;
+  -webkit-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.24);
+  padding-right: 20px;
+  min-width: fit-content;
+}
+
+.ImpreseeSuggestionsContentDesktop .ImpreseeSearchSuggestion {
+  border: none;
+  box-shadow: none;
+}
+
+.ImpreseeSearchSuggestion:hover {
+  background-color: #eee;
+}
+
+.ImpreseeSearchSuggestionName {
+  color: #6d6d6d;
+  font-size: 1em;
+  margin: 3px 6px;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-right: 10px;
+  white-space: break-spaces;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.ImpreseeSearchSuggestionImg {
+  height: 10px;
+  width: 10px;
+}
+.ImpreseeSuggestionsContentDesktop .ImpreseeSearchSuggestionImg {
+  height: 20px;
+  width: 20px;
+}
+.ImpreseeSuggestionsContentDesktop .ImpreseeSearchSuggestionName {
+  margin-right: 6px;
+}
+.ImpreseeSuggestionsContentDesktop .ImpreseeSearchSuggestion {
+  padding-right: 10px;
+}
+.ImpreseePromotedProducts{
+  margin: 2px;
+  padding: 2px;
+}
+
+.ImpreseePromotedProductsTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.ImpreseePromotedProductLink{
+  min-width: fit-content;
+}
+
+.ImpreseePromotedProductsGrid{
+  display: flex;
+  overflow-x: auto;
+}
+
+.ImpreseePromotedProduct {
+  box-sizing: border-box;
+  padding: 5px;
+  min-width: fit-content;
+  cursor: pointer;
+  position: relative;
+  height: 60px;
+  margin: 2px 5px;
+  background-color: white;
+  border: 1px solid #EEE;
+  border-left: 5px solid;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+
+.ImpreseePromotedProductImage{
+  max-height: 100%;
+  width: auto;
+  border-right: 1px solid #EEE;
+}
+
+.ImpreseePromotedProduct .ImpreseePromotedProductStar {
+  position: absolute;
+  right: 2px;
+  mix-blend-mode: multiply;
+  margin: 0px;
+}
+
+.ImpreseePromotedProduct .ImpreseePromotedProductCorner {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  right: 0;
+}
+
+.ImpreseePromotedProduct .ImpreseeTitle {
+  white-space: nowrap;
+  height: 30%;
+  text-align: left;
+}
+
+.ImpreseePromotedProduct .ImpreseeGetProductContainer{
+  min-height: 0em;
+  height: 70%;
+  align-items: center;
+}
+
+.ImpreseePromotedProductTexts{
+  width: 100%;
+  height: 100%;
+  padding: 0px 25px 0px 15px;
+  box-sizing: border-box;
+}
+
+.ImpreseePromotedProduct .ImpreseeProductPrices {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 992px) {
+    .ImpreseePromotedProduct {
+      min-width: 260px;
+      margin-top: 10px;
+      
+    }
+    
+    .ImpreseePromotedProductsGrid {
+      display: grid;
+      grid-auto-flow: row;
+      overflow-x: hidden;
+    }
+}
+.ImpreseeGrid {
+  height: auto;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 50%);
+}
+.ImpreseeRightBorder {
+  width: 1px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  opacity: 0.5;
+  margin: 0 1px;
+}
+.ImpreseeRightBorder > div {
+  height: 100%;
+  background-color: #cccccc;
+}
+.ImpreseeBottomBorder {
+  height: 1px;
+  width: 100%;
+  background-color: #cccccc;
+  opacity: 0.5;
+}
+@media only screen and (min-width: 768px) {
+  .ImpreseeGrid {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ImpreseeGrid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+.ImpreseeFilterHeader {
+  display: flex;
+  font-weight: bold;
+}
+.ImpreseeFilterHeader button {
+  border: none;
+  background-color: white;
+  padding: 0;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.ImpreseeFilterHeader button img {
+  height: 15px;
+  width: 15px;
+}
+.ImpreseeClearFilters {
+  text-align: right;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.ImpreseeCollapsible {
+  margin: 20px 0;
+  border-bottom-color: #eee;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 15px;
+}
+.ImpreseeCollapsible__contentOuter {
+  position: relative;
+}
+.ImpreseeCollapsible__trigger {
+  display: block;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ccc;
+  position: relative;
+  border: 1px solid white;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+.ImpreseeArrowDown {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  margin: auto 5px;
+}
+.ImpreseeCollapsible__trigger.is-open .ImpreseeArrowDown {
+  transform: rotate(180deg);
+}
+.ImpreseeCollapsible__trigger.is-disabled {
+  opacity: 0.5;
+  background-color: grey;
+}
+.ImpreseeCollapsible__contentInner {
+  color: black;
+  max-height: 200px;
+  overflow: hidden;
+  font-weight: normal;
+}
+.ImpreseeCollapsible__contentInner.Collapsible__contentInner_values {
+  color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  max-height: max-content;
+}
+.ImpreseeCollapsible__contentInner.Collapsible__contentInner_values label {
+  margin-left: 5px;
+  display: inline-block !important;
+  width: calc(100% - 40px);
+  font-weight: normal;
+}
+.ImpreseeCollapsible__contentInner.Collapsible__contentInner_values label span {
+  display: inline-block;
+  max-width: calc(100% - 45px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+  font-weight: normal;
+}
+.ImpreseeCollapsible__contentInner.Collapsible__contentInner_values p {
+  margin: 5px 0; 
+}
+.ImpreseeSelectedFilter {
+  padding: 10px;
+  background-color: #eee;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  max-width: 33vw;
+  max-height: 40px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  margin: 2px 5px;
+}
+.ImpreseeSelectedFilter .ImpreseeFilterHeader span {
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ImpreseeSelectedFilter .ImpreseeFilterHeader button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.ImpreseeFilterTitleMobile {
+  color: #999;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+.ImpreseeMobileFilterButtonContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+.ImpreseeMobileFilterButtonContainer button {
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  width: 50%;
+  outline: none;
+  font-weight: bold;
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeSelectedFilter,
+  .ImpreseeSelectedFilters {
+    display: none;
+  }
+  .ImpreseeCollapsible__contentInner.Collapsible__contentInner_values {
+    height: auto;
+    max-height: max-content;
+  }
+}
+
+.ImpreseeSliderContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.ImpreseeRangesInInputRow {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+}
+/* Chrome, Safari, Edge, Opera */
+.ImpreseeRangesInInputRow input::-webkit-outer-spin-button,
+.ImpreseeRangesInInputRow input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.ImpreseeRangesInInputRow input[type=number] {
+  -moz-appearance:textfield;
+}
+.ImpreseeRangesInInputRow input {
+  width: 40%;
+  height: 30px;
+  border-style: solid;
+  border-radius: 0;
+  border-width: 1px;
+  padding: 3px;
+  border-color: #EEE;
+  color: black;
+}
+.ImpreseeRangesInInputRow span {
+  line-height: 40px;
+  font-size: 1.5em;
+  color: #9C9C9C;
+}
+.rc-slider {
+  position: relative;
+  height: 50px;
+  padding: 5px 0;
+  width: 100%;
+  border-radius: 6px;
+  -ms-touch-action: none;
+      touch-action: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider * {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  background-color: #e9e9e9;
+  height: 4px;
+  border-radius: 6px;
+}
+.rc-slider-track {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  border-radius: 6px;
+  background-color: #abe2fb;
+}
+.rc-slider-handle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  margin-top: -5px;
+  cursor: grab;
+  border-radius: 50%;
+  border: solid 4px #96dbfa;
+  background-color: #fff;
+  -ms-touch-action: pan-x;
+      touch-action: pan-x;
+}
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+  border-color: #57c5f7;
+  box-shadow: 0 0 0 5px #96dbfa;
+}
+.rc-slider-handle:focus {
+  outline: none;
+}
+.rc-slider-handle-click-focused:focus {
+  border-color: #96dbfa;
+  box-shadow: unset;
+}
+.rc-slider-handle:hover {
+  border-color: #57c5f7;
+}
+.rc-slider-handle:active {
+  border-color: #57c5f7;
+  box-shadow: 0 0 5px #57c5f7;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.rc-slider-mark {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+}
+.rc-slider-mark-text {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  color: #666;
+  font-size: 1em;
+  font-weight: bold;
+  transform: translateX(-90%) !important;
+  width: max-content;
+}
+.rc-slider-mark > .rc-slider-mark-text:first-child {
+  transform: translateX(-10%) !important;
+}
+.rc-slider-mark-text-active {
+  color: #666;
+}
+.rc-slider-step {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+.rc-slider-dot {
+  position: absolute;
+  bottom: -2px;
+  margin-left: -4px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e9e9e9;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.rc-slider-dot-active {
+  border-color: #96dbfa;
+}
+.rc-slider-dot-reverse {
+  margin-left: 0;
+  margin-right: -4px;
+}
+.rc-slider-disabled {
+  background-color: #e9e9e9;
+}
+.rc-slider-disabled .rc-slider-track {
+  background-color: #ccc;
+}
+.rc-slider-disabled .rc-slider-handle,
+.rc-slider-disabled .rc-slider-dot {
+  border-color: #ccc;
+  box-shadow: none;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+.rc-slider-disabled .rc-slider-mark-text,
+.rc-slider-disabled .rc-slider-dot {
+  cursor: not-allowed !important;
+}
+.rc-slider-vertical {
+  width: 14px;
+  height: 100%;
+  padding: 0 5px;
+}
+.rc-slider-vertical .rc-slider-rail {
+  height: 100%;
+  width: 4px;
+}
+.rc-slider-vertical .rc-slider-track {
+  left: 5px;
+  bottom: 0;
+  width: 4px;
+}
+.rc-slider-vertical .rc-slider-handle {
+  margin-left: -5px;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+.rc-slider-vertical .rc-slider-mark {
+  top: 0;
+  left: 18px;
+  height: 100%;
+}
+.rc-slider-vertical .rc-slider-step {
+  height: 100%;
+  width: 4px;
+}
+.rc-slider-vertical .rc-slider-dot {
+  left: 2px;
+  margin-bottom: -4px;
+}
+.rc-slider-vertical .rc-slider-dot:first-child {
+  margin-bottom: -4px;
+}
+.rc-slider-vertical .rc-slider-dot:last-child {
+  margin-bottom: -4px;
+}
+.rc-slider-tooltip-zoom-down-enter,
+.rc-slider-tooltip-zoom-down-appear {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  display: block !important;
+  animation-play-state: paused;
+}
+.rc-slider-tooltip-zoom-down-leave {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  display: block !important;
+  animation-play-state: paused;
+}
+.rc-slider-tooltip-zoom-down-enter.rc-slider-tooltip-zoom-down-enter-active,
+.rc-slider-tooltip-zoom-down-appear.rc-slider-tooltip-zoom-down-appear-active {
+  animation-name: rcSliderTooltipZoomDownIn;
+  animation-play-state: running;
+}
+.rc-slider-tooltip-zoom-down-leave.rc-slider-tooltip-zoom-down-leave-active {
+  animation-name: rcSliderTooltipZoomDownOut;
+  animation-play-state: running;
+}
+.rc-slider-tooltip-zoom-down-enter,
+.rc-slider-tooltip-zoom-down-appear {
+  transform: scale(0, 0);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.rc-slider-tooltip-zoom-down-leave {
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+@keyframes rcSliderTooltipZoomDownIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: scale(0, 0);
+  }
+  100% {
+    transform-origin: 50% 100%;
+    transform: scale(1, 1);
+  }
+}
+@keyframes rcSliderTooltipZoomDownOut {
+  0% {
+    transform-origin: 50% 100%;
+    transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: scale(0, 0);
+  }
+}
+.rc-slider-tooltip {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: visible;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider-tooltip * {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider-tooltip-hidden {
+  display: none;
+}
+.rc-slider-tooltip-placement-top {
+  padding: 4px 0 8px 0;
+}
+.rc-slider-tooltip-inner {
+  padding: 6px 2px;
+  min-width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #6c6c6c;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #d9d9d9;
+}
+.rc-slider-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.rc-slider-tooltip-placement-top .rc-slider-tooltip-arrow {
+  bottom: 4px;
+  left: 50%;
+  margin-left: -4px;
+  border-width: 4px 4px 0;
+  border-top-color: #6c6c6c;
+}
+.ImpreseeSideSheetOverlay {
+  position: absolute;
+  height: 100%;
+  z-index: 99999999998;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.4;
+  display: none;
+}
+.ImpreseeSideSheetOverlay.visible {
+  display: block;
+}
+.ImpreseeSideSheet {
+  left: 100%;       
+  background: white;
+  transition: left 0.5s;
+  padding: 5%;
+  top:0;
+  bottom: 0;
+  z-index: 99999999999;
+  position: absolute;
+}
+.ImpreseeSideSheet.opened {
+  left: 10%;
+  right:0;
+  top:0;
+  bottom: 0;
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
+  box-shadow: 0px -5px 10px 0px rgba(204,204,204,1);
+}
+.ImpreseeSideSheet .ImpreseeGeneralModalCloseButton.ImpreseeModalCloseButton {
+    pointer-events: inherit !important;
+    opacity: 1 !important;
+}
+.ImpreseeSideSheet.closed .ImpreseeGeneralModalCloseButton.ImpreseeModalCloseButton {
+    pointer-events: inherit !important;
+    opacity: 0 !important;
+}
+#ImpreseeTextResultsModalId
+  .ImpreseeGeneralModalCloseButton.ImpreseeModalCloseButton:focus
+  .ImpreseeTextSearchResultsHeader {
+  outline: none;
+}
+header.ImpreseeTextSearchResultsHeader  {
+  background: white;
+  line-height: 1em;
+  position: relative;
+}
+section.ImpreseeNoTopMargin {
+  margin-top: 20px!important;
+}
+.ImpreseeTextSearchResultsHeader .ImpreseeTextSearchTitle {
+  padding: 10px 20px;
+  background-color: #666;
+  color: white;
+  z-index: 99999;
+  -webkit-box-shadow: 0px 7px 8px 0px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 7px 8px 0px rgba(194, 194, 194, 1);
+  box-shadow: 0px 7px 8px 0px rgba(194, 194, 194, 1);
+}
+.ImpreseeTextSearchResultsHeader h1 {
+  display: none;
+}
+.ImpreseeTextSearchTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px !important;
+}
+.ImpreseeSelectOrder > div {
+  z-index: 2999;
+}
+
+.ImpreseeTextSearchResultsHeader select * {
+  background-color: white;
+}
+.ImpreseeSelectOrder {
+  width: 200px;
+}
+.ImpreseeNumberOfResults {
+  font-weight: bold;
+}
+.ImpreseePage {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.ImpreseePage.selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.ImpreseePreviousPage,
+.ImpreseeNextPage {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.ImpreseeNextPage {
+  transform: rotate(180deg);
+}
+.ImpreseePreviousPage.disabled,
+.ImpreseeNextPage.disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ImpreseePagination {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.ImpreseeGrid + .ImpreseePagination {
+  margin: 20px 0;
+}
+.ImpreseeSearchResultsContainer {
+  position: relative;
+}
+.ImpreseeSearchingByChangingPage {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1999;
+  position: absolute;
+}
+.ImpreseeFilterAndDisplayContainer {
+  display: flex;
+}
+.ImpreseeMobileFiltersButton,
+.ImpreseeChangeDisplayFormatButton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 0;
+  padding: 0 10px;
+  background: white;
+  cursor: pointer;
+}
+.ImpreseeMobileFiltersButton {
+  order: 2;
+  padding-right: 0;
+  border-left-style: solid;
+  border-left-color: #eee;
+  border-left-width: 1px;
+  position: relative;
+}
+.ImpreseeMobileFiltersButton img {
+  margin: 0 5px;
+  height: 25px;
+  width: 25px;
+}
+.ImpreseeChangeDisplayFormatButton {
+  opacity: 1;
+  height: 40px;
+  width: 40px;
+}
+.ImpreseeChangeDisplayFormatButton img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.ImpreseeChangeDisplayFormatButton.ImpreseeActive {
+  display: none;
+}
+.ImpreseeChangeDisplayFormatContainer {
+}
+.ImpreseeFiltersContainer,
+.ImpreseeChangeDisplayFormatContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.ImpreseeFiltersContainer {
+  padding: 0 14px;
+}
+#ImpreseeTextResultsModalId {
+  max-width: 100%;
+  width: 100%;
+}
+.ImpreseeVerticalLine {
+  height: 100%;
+  width: 1px;
+  border-right-color: #ccc;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+#ImpreseeTextResultsModalId .ImpreseeResultsGrid {
+  padding: 0;
+}
+#ImpreseeTextResultsModalId:not(.ImpreseeMobile) .ImpreseeCompleteSearchBar {
+  margin-bottom: 0;
+  box-shadow: 0 0 0 0;
+  margin-bottom: 5px;
+}
+#ImpreseeTextResultsModalId .ImpreseeList,
+#ImpreseeTextResultsModalId .ImpreseeGrid {
+  margin: 0 7px;
+}
+#ImpreseeTextResultsModalId
+  .ImpreseeGeneralModalCloseButton.ImpreseeModalCloseButton {
+  opacity: 0;
+  pointer-events: none;
+  max-width: 40px;
+}
+#ImpreseeTextResultsModalId
+  .ImpreseeErrorScreen
+  + .ImpreseeGeneralModalCloseButton.ImpreseeModalCloseButton {
+  opacity: 1;
+  pointer-events: all;
+}
+.ImpreseeCircle {
+  border-radius: 100px;
+  height: 1.6em;
+  width: 1.6em;
+  line-height: 1.6em;
+  font-size: 0.8em;
+  color: white;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.ImpreseeSmallCircle {
+  border-radius: 100px;
+  height: 1.2em;
+  width: 1.2em;
+  line-height: 1.2em;
+  font-size: 0.8em;
+  color: white;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .ImpreseeChangeDisplayFormatButton {
+    opacity: 0.4;
+    display: inline-block;
+  }
+  .ImpreseeChangeDisplayFormatButton.ImpreseeActive {
+    opacity: 1;
+    display: inline-block;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeFiltersContainer,
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeChangeDisplayFormatContainer {
+    padding: 0;
+  }
+  
+  #ImpreseeTextResultsModalId
+    .ImpreseeGeneralModalCloseButton.ImpreseeModalCloseButton {
+    top: 40px;
+    outline: none;
+  }
+  .ImpreseModal:not(.ImpreseeMobile) .ImpreseeTextSearchResultsHeader {
+    margin: 10px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: normal;
+    color: #333;
+  }
+  .ImpreseeTextSearchResultsHeader > div {
+    margin: 5px 0;
+  }
+  .ImpreseeTextSearchResultsHeader h1 {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeTextSearchResultsHeader .ImpreseeTextSearchTitle {
+    background-color: white;
+    color: black;
+    padding: 0;
+    box-shadow: 0 0 0 0;
+  }
+
+
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeFullTextSearchResultsScreen {
+    display: flex;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeFullTextSearchResultsScreen .ImpreseeFiltersColumn {
+    width: calc(25% - 12px);
+    border-right-color: #eee;
+    border-right-style: solid;
+    border-right-width: 2px;
+    padding-right: 10px;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile)#ImpreseeTextResultsModalId {
+    max-width: 90%;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeSearchResultsContainer {
+    width: calc(75% - 30px);
+    padding-left: 30px;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeMobileFiltersButton {
+    display: none;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile) .ImpreseeChangeDisplayFormatContainer {
+    min-width: 80px;
+    height: 35px;
+    margin-left: 10px;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile)#ImpreseeTextResultsModalId
+    .ImpreseeGeneralModalCloseButton.ImpreseeModalCloseButton {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+  .ImpreseeModal:not(.ImpreseeMobile)#ImpreseeTextResultsModalId .ImpreseeResultsGrid {
+    margin-top: 110px;
+  }
+}
+
+.ImpreseeSortByContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ImpreseeSortByContainer > span {
+  color: black;
+}
+.ImpreseeSelectContainer {
+  margin-right: 20px;
+  position: relative;
+}
+.ImpreseeSortBySelect {
+  width: calc(100% + 20px);
+  position: relative;
+  z-index: 2999;
+  padding-left: 5px;
+}
+
+.ImpreseeSortBySelect--multiple {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ImpreseeSortBySelect--multiple::after,
+.ImpreseeSortBySelect--focus::after {
+  content: "\f002";
+}
+
+.ImpreseeSortBySelect__icon--disabled::after {
+  content: none !important;
+}
+
+.ImpreseeSortBySelect--input::after {
+  display: none !important;
+}
+
+.ImpreseeSortBySelect__out {
+  display: none;
+}
+
+.ImpreseeSortBySelect__search {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+input.ImpreseeSortBySelect__search {
+  line-height: 1;
+}
+
+.ImpreseeSortBySelect--multiple .ImpreseeSortBySelect__search {
+  box-shadow: none;
+}
+
+.ImpreseeSortBySelect--input .ImpreseeSortBySelect__search {
+  cursor: text;
+}
+
+.ImpreseeSortBySelect__search:focus {
+  cursor: text;
+}
+
+.ImpreseeSortBySelect__search--placeholder {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.ImpreseeSortBySelect input::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.ImpreseeSortBySelect input::-moz-placeholder {
+  color: #ccc;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.ImpreseeSortBySelect input:-moz-placeholder {
+  color: #ccc;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.ImpreseeSortBySelect input:-ms-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+  font-weight: normal;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.ImpreseeSortBySelect__select {
+  display: none;
+  position: absolute;
+  top: 41px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 4px;
+  overflow: auto;
+  box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  z-index: 100;
+  min-height: 49px;
+  width: max-content;
+}
+
+.ImpreseeSortBySelect--multiple .ImpreseeSortBySelect__select {
+  display: block;
+  position: static;
+  border-top: 1px solid #eee;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.ImpreseeSortBySelect__select--display {
+  display: block;
+}
+
+.ImpreseeSortBySelect__option {
+  font-size: 1em;
+  font-weight: 400;
+  color: #616b74;
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+.ImpreseeSortBySelect__options {
+  padding: 0;
+}
+.ImpreseeSortBySelect__option:first-child {
+  border-top: none;
+}
+
+.ImpreseeSortBySelect__option--hover,
+.ImpreseeSortBySelect__option:hover {
+  background: #f4f7fa;
+}
+
+.ImpreseeSortBySelect__option--selected {
+  font-weight: bold;
+  color: black;
+}
+
+.ImpreseeSortBySelect__option--selected:hover,
+.ImpreseeSortBySelect__option--selected.ImpreseeSortBySelect__option--hover {
+  font-weight: bold;
+}
+
+.ImpreseeSortBySelect__group {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.ImpreseeSortBySelect__group-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.ImpreseeLoadingItem {
+  width: 99%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+}
+.ImpreseeLoadingGrid {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 50%);
+}
+.ImpreseeLoadingImageContainer {
+  width: auto;
+  margin: 5px;
+  height: 190px;
+}
+.ImpreseeLoadingItemImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .ImpreseeLoadingGrid {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ImpreseeLoadingGrid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+.ImpreseeBackToDetections {
+  bottom: 5px;
+  right: 5px;
+  position: absolute;
+  cursor: pointer;
+  height: 40px;
+}
+.ImpreseeBackToDetections > img {
+  height: 100%;
+}
+.ImpreseeQueryCropperContainer {
+  max-width: 100%;
+  position: relative;
+  flex: initial;
+  max-height: 60vh;
+  overflow: hidden;
+}
+.ImpreseeCustomSearchRow {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ImpreseeSearchCustomArea {
+  margin: 5% 0; 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ImpreseeSearchAreaButton {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ImpreseeSearchAreaButton > img {
+  max-height: 60%;
+  width: auto;
+}
+.ImpreseeLine {
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(153, 153, 153, 1);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(153, 153, 153, 1);
+  box-shadow: 0px 4px 5px 0px rgba(153, 153, 153, 1);
+  height: 5px;
+  background-color: white;
+  width: calc(100% + 40px);
+}
+.ImpreseeEmbeddedResults .ImpreseeSearchCustomArea {
+  flex-direction: row;
+  margin-top: 35px;
+}
+.ImpreseeQueryCropperContainer .cropper-modal {
+  opacity: 0.8;
+}
+.ImpreseeQueryCropperContainer .point-w, .ImpreseeQueryCropperContainer .point-n, .ImpreseeQueryCropperContainer .point-s,.ImpreseeQueryCropperContainer .point-e{
+  display: none;
+}
+@media only screen and (max-width: 320px) {
+  .ImpreseeSearchAreaButton {
+    height: 50px;
+    width: 50px;
+  }
+  .ImpreseeEmbeddedResults .ImpreseeSearchCustomArea {
+    margin-top: 15px;
+  }
+}
+
+.ImpreseeLoadingImage {
+  visibility: hidden;
+}
+.ImpreseeSearchQuery {
+  max-height: 100%;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.ImpreseeSearchQuery > img {
+  max-width: 100%;
+}
+.ImpreseeSearchQuery.ImpreseeHorizontalQuery {
+  width: 100%;
+  height: auto;
+}
+.ImpreseeSearchQuery.ImpreseeVerticalQuery {
+  min-height: 60%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%
+}
+.ImpreseeResults.ImpreseeEmbeddedResults .ImpreseeSearchQuery.ImpreseeVerticalQuery{
+  min-height: 0;
+}
+.ImpreseeLoadingImage {
+  visibility: hidden;
+}
+.ImpreseeDetectionQuery .ImpreseeSelectedArea {
+  -webkit-box-shadow: 0 0 2000px 2000px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 2000px 2000px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-transition: width, height, top, left;
+  transition: width, height, top, left;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.ImpreseeDetectionDotContainer {
+  cursor: pointer;
+  position: absolute;
+  padding: 12px;
+}
+.ImpreseeDetectionQuery .ImpreseeDetectionDot {
+  border-radius: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  width: 12px;
+  height: 12px;
+}
+.ImpreseeDetectionQuery .ImpreseeCropQuery {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+  height: 40px;
+}
+.ImpreseeCropQuery > img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+}
+.ImpreseeDetectionQuery.ImpreseeHorizontalQuery {
+  width: 100%;
+  height: auto;
+}
+.ImpreseeDetectionQuery.ImpreseeVerticalQuery {
+  width: auto;
+  height: 100%;
+}
+.ImpreseeDetectionQuery {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  outline: 0;
+  max-width: 100%;
+  vertical-align: top;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.ImpreseeDetectionQuery > canvas {
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  border: 0;
+  width: auto;
+}
+.ImpreseeVerticalQuery #ImpreseeDetectionQueryID, .ImpreseeHorizontalQuery #ImpreseeDetectionQueryID{
+  max-height: 60vh;
+  width: auto !important;
+}
+
+.ImpreseeDetectionQuery > img:not(#ImpreseeDetectionQueryID) {
+  max-width: 100%;
+  border: 0;
+  width: auto;
+  left: 0;
+  opacity: 0;
+  max-height: 100%;
+  display: none;
+}
+@media only screen and (min-width: 992px){
+  .ImpreseeVerticalQuery #ImpreseeDetectionQueryID {
+    max-height: 40vh;
+  }
+}
+.ImpreseeSketchQuery {
+  position: relative;
+  max-height: 100%;
+  width: 80%;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: #cccccc;
+  border-width: 2px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ImpreseeSketch {
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .ImpreseeSketchQuery {
+    height: 300px;
+  }
+}
+
+.ImpreseeSearchAgain {
+  position: absolute;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 4rem;
+  left: 10px;
+  top: 20px;
+  min-width: 60px;
+  min-height: 60px;
+}
+.ImpreseeSearchAgain .ImpreseeSearchAgainIcon {
+  width: 100%;
+  max-height: 100%;
+}
+.ImpreseeDownloadSketch {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .ImpreseeSearchAgain {
+    top: 3%;
+    left: 3%;
+  }
+  .ImpreseeEmbeddedResults .ImpreseeSearchAgain {
+    top: 10px;
+  }
+}
+
+.ImpreseeWhiteOverlay {
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+}
+.impresee-overlay-open {
+  overflow: hidden;
+}
