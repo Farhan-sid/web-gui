@@ -9,7 +9,9 @@ var pf = document.querySelector(".popup_filter")
 var body = document.querySelector("body")
 var sea =document.querySelector(".search")
 var dn = document.querySelector(".dn");
-var cd = document.querySelector(".cd")
+var snf = document.querySelector(".section_nt_filter i")
+var ao = document.querySelector(".act_opened")
+
 
 var isHidden = false;
 
@@ -44,29 +46,30 @@ fil.addEventListener("click",function(){
     body.style.overflowY = "hidden"
 })
 
+snf.addEventListener("click",function(){
+    pf.style.opacity = 0
+    pf.style.visibility = 'hidden'
+    mo.style.opacity = 0
+    mo.style.visibility = 'hidden'
+    body.style.overflowY = "visible"
+})
+
 sea.addEventListener("click",function(){
-    dn.style.opacity = 1
-    dn.style.visibility = 'visible'
+    ao.style.opacity = 1
+    ao.style.visibility = 'visible'
     mo.style.opacity = 1
     mo.style.visibility = 'visible'
     body.style.overflowY = "hidden"
 })
 
 clo.addEventListener("click",function(){
-    dn.style.opacity = 0
-    dn.style.visibility = 'hidden'
+    ao.style.opacity = 0
+    ao.style.visibility = 'hidden'
     mo.style.opacity = 0
     mo.style.visibility = 'hidden'
     body.style.overflowY = "visible"
 })
 
 
-cd.addEventListener("click",function(){
-    dn.style.opacity = 0
-    dn.style.visibility = 'hidden'
-    mo.style.opacity = 0
-    mo.style.visibility = 'hidden'
-    body.style.overflowY = "visible"
-})
 
 

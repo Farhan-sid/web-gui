@@ -4,6 +4,20 @@
   text-decoration: none;
 }
 
+body {
+  background-color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5b5b5b;
+  font-weight: 400;
+  /* width: 100%; */
+  font: 400 14px/1.75 sans-serif;
+  color: #000;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 /* header */
 header {
   height: 93px;
@@ -483,7 +497,7 @@ svg.ic_triangle_svg {
 
 .nt_sortby {
   z-index: 5;
-  position: relative;
+  /* position: relative; */
   width: auto;
   height: auto;
   -webkit-transform: none !important;
@@ -491,7 +505,7 @@ svg.ic_triangle_svg {
   transition: none;
   box-shadow: none;
   border-radius: 3px;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100vw;
@@ -512,8 +526,8 @@ svg.ic_triangle_svg {
 }
 
 .wrap_sortby {
-  visibility: visible;
-  opacity: 1;
+  /* visibility: visible;
+  opacity: 1; */
   -webkit-transform: scale(1.001);
   transform: scale(1.001);
   transition: opacity 0.4s cubic-bezier(0, 1, 0.4, 1),
@@ -522,14 +536,14 @@ svg.ic_triangle_svg {
   position: absolute;
   width: auto;
   height: auto;
-  top: 10px;
+  /* top: 10px; */
   left: auto;
   right: 151px;
   bottom: auto;
   min-width: 190px;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.1);
-  /* visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   -webkit-transform: scale(1.001);
   transform: scale(1.001);
   background: #fff;
@@ -1053,7 +1067,7 @@ input {
   right: 0;
 }
 
-.dn {
+.act_opened {
   width: 340px;
   background-color: white;
   overflow-y: hidden;
@@ -1332,7 +1346,9 @@ select {
 }
 
 .section_nt_filter i {
-  line-height: 0.9;
+  line-height: 0.7;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 .bgb {
