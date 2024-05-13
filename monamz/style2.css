@@ -657,7 +657,12 @@ svg.ic_triangle_svg {
 
 .pr:hover .pa {
   opacity: 1;
-  transition: opacity 0.5s, transform 2s;
+  transition: 0.5s, transform 2s;
+}
+
+.pr .pa {
+  opacity: 0; /* Default mein opacity ko 0 rakhein */
+  transition: opacity 0.5s; /* Default transition time specify karein */
 }
 
 .bg {
@@ -713,6 +718,11 @@ svg.ic_triangle_svg {
 .pr:hover .wl {
   opacity: 1;
   transition: opacity 0.5s, transform 2s;
+}
+
+.pr .wl {
+  opacity: 0; /* Default mein opacity ko 0 rakhein */
+  transition: opacity 0.5s; /* Default transition time specify karein */
 }
 
 /* .hover_button {
@@ -783,6 +793,35 @@ svg.ic_triangle_svg {
   transition: opacity 0.15s, transform 0.25s, -webkit-transform 0.25s;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
+}
+
+.pr .pk {
+  opacity: 0;
+  transition: opacity 0.5s, transform 2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-size: 13px;
+  -webkit-transition: opacity 0.15s, -webkit-transform 0.25s;
+  transition: opacity 0.15s, transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .fa-eye {
