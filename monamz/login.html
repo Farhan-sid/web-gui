@@ -15,322 +15,210 @@
               <div class="login-card-header">
                 <header class="login-card__header">
                   <h1 class="login-card__logo">
-                    <a href="https://pk.saniamaskatiya.com">
-                      <img
-                        alt="logo"
-                        src="https://cdn.shopify.com/s/files/1/0660/4164/3225/files/loading_200x60@2x.webp?v=1663487325.webp"
-                      />
+                    <a href="/monamz.html">
+                      <img src="/monamz.jpg" alt="logo" />
                     </a>
                   </h1>
                 </header>
-
-                <div
-                  data-offline='{"visible":true,"appear":"down"}'
-                  class="connectivity-hidden login-card__content"
-                >
-                  <div
-                    class="ui-banner ui-banner--status-warning ui-banner--within-page"
-                  >
-                    <div class="ui-banner__ribbon">
-                      <svg
-                        class="next-icon next-icon--size-20 next-icon--no-nudge"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <use xlink:href="#CircleAlertMajor"></use>
-                      </svg>
-                    </div>
-                    <div class="ui-banner__content-container">
-                      <div class="ui-banner__heading">
-                        <h2 class="ui-heading">You are offline</h2>
-                      </div>
-                      <div class="ui-banner__content">
-                        <div
-                          class="ui-type-container ui-type-container--spacing-tight"
-                        >
-                          <p>Reconnect or refresh the page to log in.</p>
-                        </div>
+                <div class="login-card__content">
+                  <div class="main-card-section">
+                    <div class="headings-container">
+                      <div>
+                        <h1 class="ui-heading">Log in</h1>
+                        <h3 class="ui-subheading ui-subheading--subdued">
+                          Enter your email and we'll send you a login code
+                        </h3>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="login-card__content">
-                <div class="main-card-section">
-                  <div class="headings-container">
-                    <div>
-                      <h1 class="ui-heading">Log in</h1>
-                      <h3 class="ui-subheading ui-subheading--subdued">
-                        Enter your email and we'll send you a login code
-                      </h3>
-                    </div>
-                  </div>
-
-                  <div class="captcha-element captcha-error">
-                    <div
-                      class="ui-banner ui-banner--status-warning ui-banner--within-page"
+                    <form
+                      id="account_lookup"
+                      novalidate="novalidate"
+                      data-tg-remote="true"
+                      action="/66041643225/auth/lookup?rid=4012db8c-e2a4-4de8-bd3b-e544cdd1ddab"
+                      accept-charset="UTF-8"
+                      method="post"
                     >
-                      <div class="ui-banner__ribbon">
-                        <svg
-                          class="next-icon next-icon--size-20 next-icon--no-nudge"
-                          aria-hidden="true"
-                          focusable="false"
+                      <input
+                        type="hidden"
+                        name="authenticity_token"
+                        value="9EgkLdyrF6xx95cVipu49LS9VDEIGuypjfXJmLGTOkBm7zFEtCH1uiJ0cvoP0J_wK8qc4dwRsXU12OpITNGWtQ"
+                        autocomplete="off"
+                      />
+                      <div class="ui-form__section">
+                        <div
+                          class="ui-form__group type-ahead-wrapper polaris-uplift-input-wrapper"
                         >
-                          <use xlink:href="#CircleAlertMajor"></use>
-                        </svg>
-                      </div>
-                      <div class="ui-banner__content-container">
-                        <div class="ui-banner__content">
                           <div
-                            class="ui-type-container ui-type-container--spacing-tight"
+                            class="next-input-wrapper type-ahead-hint"
+                            aria-hidden="true"
                           >
-                            <p>
-                              Something prevented the captcha from loading. Try
-                              disabling your ad blocker or reload the page.
+                            <label class="next-label" for="email_type_ahead"
+                              >Email type ahead</label
+                            ><input
+                              type="text"
+                              name="email type ahead"
+                              id="email_type_ahead"
+                              value=""
+                              class="next-input next-input--disabled next-input--readonly type-ahead-hint-field"
+                              tabindex="-1"
+                              readonly="readonly"
+                              autocomplete="off"
+                              disabled="disabled"
+                            />
+                          </div>
+
+                          <div class="next-input-wrapper email-input-wrapper">
+                            <label class="next-label" for="account_email"
+                              >Email</label
+                            ><input
+                              class="next-input type-ahead-input email-typo-input"
+                              type="email"
+                              autocomplete="username"
+                              aria-required="true"
+                              aria-invalid="false"
+                              autofocus="autofocus"
+                              aria-describedby="help-8d416fd2306702a4e5c72426964a6751"
+                              size="30"
+                              name="account[email]"
+                              id="account_email"
+                            />
+                            <p
+                              id="help-8d416fd2306702a4e5c72426964a6751"
+                              class="next-input__help-text"
+                            >
+                              <span class="typo-suggestion">
+                                Did you mean
+                                <button
+                                  type="button"
+                                  class="ui-button ui-button--link"
+                                >
+                                  <span class="suggested-local"></span>@<span
+                                    class="suggested-second"
+                                  ></span
+                                  ><span class="suggested-period">.</span
+                                  ><span class="suggested-top"></span></button
+                                >?
+                              </span>
                             </p>
+                          </div>
+
+                          <div
+                            class="next-input-wrapper lastpass-hidden"
+                            aria-hidden="true"
+                          >
+                            <label class="next-label" for="account_password"
+                              >Password</label
+                            ><input
+                              type="password"
+                              autocomplete="current-password"
+                              tabindex="-1"
+                              class="next-input transferable-input"
+                              size="30"
+                              name="account[password]"
+                              id="account_password"
+                            />
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <form
-                    id="account_lookup"
-                    novalidate="novalidate"
-                    data-tg-remote="true"
-                    action="/66041643225/auth/lookup?rid=4a35ad49-3384-4e34-85ec-822b62a23d2f"
-                    accept-charset="UTF-8"
-                    method="post"
-                  >
-                    <input
-                      type="hidden"
-                      name="authenticity_token"
-                      value="dxyHaDgabWUlGplozigP8yHn7o_756Gg0VQNzGbZHlaYQUEdzFOauGvM1ltnli3ERQkkPBUhIMnKAon-a0RF4A"
-                      autocomplete="off"
-                    />
-                    <div class="ui-form__section">
                       <div
-                        class="ui-form__group type-ahead-wrapper polaris-uplift-input-wrapper"
+                        class="captcha-element captcha-loading--spinner captcha-v2-loaded"
                       >
-                        <div
-                          class="next-input-wrapper type-ahead-hint"
-                          aria-hidden="true"
-                        >
-                          <label class="next-label" for="email_type_ahead"
-                            >Email type ahead</label
-                          ><input
-                            type="text"
-                            name="email type ahead"
-                            id="email_type_ahead"
-                            value=""
-                            class="next-input next-input--disabled next-input--readonly type-ahead-hint-field"
-                            tabindex="-1"
-                            readonly="readonly"
-                            autocomplete="off"
-                            disabled="disabled"
-                          />
-                        </div>
-
-                        <div
-                          class="next-input-wrapper email-input-wrapper next-input-wrapper--is-error"
-                        >
-                          <label class="next-label" for="account_email"
-                            >Email</label
-                          ><input
-                            class="next-input type-ahead-input email-typo-input"
-                            type="email"
-                            autocomplete="username"
-                            aria-required="true"
-                            aria-invalid="true"
-                            value=""
-                            autofocus="autofocus"
-                            aria-describedby="error-eb88c1b7495899ff7443e2219360c884 help-bed8b981800f174c6e0e0dadee1e1447"
-                            size="30"
-                            name="account[email]"
-                            id="account_email"
-                          />
-                          <p
-                            id="error-eb88c1b7495899ff7443e2219360c884"
-                            class="validation-error"
-                          >
-                            <span class="validation-error__icon"
-                              ><svg
-                                aria-hidden="true"
-                                focusable="false"
-                                class="next-icon next-icon--color-red next-icon--size-20"
-                              >
-                                <use
-                                  xlink:href="#next-error-circle"
-                                ></use></svg></span
-                            ><span class="validation-error__message"
-                              >Enter a valid email address</span
-                            >
-                          </p>
-                          <p
-                            id="help-bed8b981800f174c6e0e0dadee1e1447"
-                            class="next-input__help-text"
-                          >
-                            <span class="typo-suggestion">
-                              Did you mean
-                              <button
-                                type="button"
-                                class="ui-button ui-button--link"
-                              >
-                                <span class="suggested-local"></span>@<span
-                                  class="suggested-second"
-                                ></span
-                                ><span class="suggested-period">.</span
-                                ><span class="suggested-top"></span></button
-                              >?
-                            </span>
-                          </p>
-                        </div>
-
-                        <div
-                          class="next-input-wrapper lastpass-hidden"
-                          aria-hidden="true"
-                        >
-                          <label class="next-label" for="account_password"
-                            >Password</label
-                          ><input
-                            type="password"
-                            autocomplete="current-password"
-                            tabindex="-1"
-                            class="next-input transferable-input"
-                            size="30"
-                            name="account[password]"
-                            id="account_password"
-                          />
-                        </div>
+                        <span role="img" class="ui-spinner"></span>
                       </div>
-                    </div>
-                    <div
-                      class="captcha-element captcha-loading--spinner captcha-v2-loaded"
-                    >
-                      <span role="img" class="ui-spinner"></span>
-                    </div>
 
-                    <div
-                      data-captcha-enterprise='{"sitekey":"cceb8ca4-854a-4a77-a355-1480a3a79274","action":"account_lookup","nonce":"d6bcce4e-0c03-4750-bc54-07283747a157","url":"https://hcaptcha.com/1/api.js?hl=en\u0026onload=captchaEnterpriseOnloadCallback\u0026render=explicit","scriptNonce":"0j+tS8q41Cy9yPRK/o+pC/R2UfTGwG4BDmbmRhD3hME=","captcha_id":"h-captcha"}'
-                    ></div>
+                      <div
+                        data-captcha-enterprise='{"sitekey":"cceb8ca4-854a-4a77-a355-1480a3a79274","action":"account_lookup","nonce":"06821d86-3e97-476d-8b5a-2c0e4c807755","url":"https://hcaptcha.com/1/api.js?hl=en\u0026onload=captchaEnterpriseOnloadCallback\u0026render=explicit","scriptNonce":"gOeggacoGGMJNPwrEYm2V2EXXXNH6uwnbIDEWw4yUYc=","captcha_id":"h-captcha"}'
+                      ></div>
 
-                    <input
-                      type="hidden"
-                      name="captcha-enterprise-js-loaded"
-                      value=""
-                    />
-                    <input
-                      type="hidden"
-                      name="captcha-enterprise-js-callback"
-                      value=""
-                    />
-                    <input type="hidden" name="captcha-js-error" value="" />
-                    <input
-                      type="hidden"
-                      name="captcha-enterprise-nonce"
-                      value="d6bcce4e-0c03-4750-bc54-07283747a157"
-                    />
-                    <input
-                      type="hidden"
-                      name="captcha-enterprise-fetched"
-                      value="true"
-                    />
-                    <input
-                      type="hidden"
-                      name="captcha-type"
-                      value="h-captcha"
-                    />
+                      <input
+                        type="hidden"
+                        name="captcha-enterprise-js-loaded"
+                        value=""
+                      />
+                      <input
+                        type="hidden"
+                        name="captcha-enterprise-js-callback"
+                        value=""
+                      />
+                      <input type="hidden" name="captcha-js-error" value="" />
+                      <input
+                        type="hidden"
+                        name="captcha-enterprise-nonce"
+                        value="06821d86-3e97-476d-8b5a-2c0e4c807755"
+                      />
+                      <input
+                        type="hidden"
+                        name="captcha-enterprise-fetched"
+                        value="true"
+                      />
+                      <input
+                        type="hidden"
+                        name="captcha-type"
+                        value="h-captcha"
+                      />
 
-                    <div
-                      class="hidden"
-                      id="js__auth-data"
-                      data-rid="4a35ad49-3384-4e34-85ec-822b62a23d2f"
-                      data-url="/66041643225/auth/browser_feedback/submit"
-                    ></div>
+                      <div
+                        class="hidden"
+                        id="js__auth-data"
+                        data-rid="4012db8c-e2a4-4de8-bd3b-e544cdd1ddab"
+                        data-url="/66041643225/auth/browser_feedback/submit"
+                      ></div>
 
-                    <div
-                      data-define="{showShopLoader: false}"
-                      data-bind-show="!showShopLoader"
-                    >
-                      <button
-                        class="ui-button ui-button--primary ui-button--full-width ui-button--size-large login-button ui-button--has-hover-icon captcha__submit"
-                        type="submit"
-                        name="commit"
-                        data-disable="true"
-                        data-bind-disabled="captchaDisabled"
-                        define="{localClass: new CaptchaStateHandler($context, {
-                                    v2Completed: true,
-                                    v3EnterpriseCompleted: false,
-                                    formCompleted: true,
-                                  })}"
-                        enable_submit_onload="true"
+                      <noscript>
+                        <input
+                          type="hidden"
+                          name="captcha-noscript"
+                          value="true"
+                        />
+                      </noscript>
+
+                      <div
+                        data-define="{showShopLoader: false}"
+                        data-bind-show="!showShopLoader"
                       >
-                        <span class="content">
-                          <span class="ui-button__text">Continue</span>
-                          <span class="ui-button__hover-icon"
-                            ><svg
-                              width="20"
-                              height="20"
-                              viewBox="0 0 20 20"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M3.49951 10C3.49951 9.58579 3.8353 9.25 4.24951 9.25L13.9391 9.25L11.2192 6.53036C10.9263 6.23748 10.9263 5.7626 11.2192 5.4697C11.512 5.17679 11.9869 5.17676 12.2798 5.46964L16.2802 9.46964C16.4209 9.6103 16.4999 9.80107 16.4999 10C16.4999 10.1989 16.4209 10.3897 16.2802 10.5304L12.2798 14.5304C11.9869 14.8232 11.512 14.8232 11.2192 14.5303C10.9263 14.2374 10.9263 13.7625 11.2192 13.4696L13.9391 10.75L4.24951 10.75C3.8353 10.75 3.49951 10.4142 3.49951 10Z"
-                                fill="currentColor"
-                              ></path>
-                            </svg>
-                          </span>
-                        </span>
-                      </button>
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      class="shop-loader-line shop-button-loader hide"
-                      data-bind-show="showShopLoader"
-                    ></div>
-                  </form>
-
-                  <p class="help-link signup-link">
-                    <span class="help-link__text"> New to customer? </span>
-                    <a
-                      href="/66041643225/auth/signup?rid=4a35ad49-3384-4e34-85ec-822b62a23d2f"
-                      class="ui-button ui-button--link arrow-link"
-                    >
-                      Get started
-                      <span class="arrow-link__icon">
-                        <svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <button
+                          class="ui-button ui-button--primary ui-button--full-width ui-button--size-large login-button ui-button--has-hover-icon captcha__submit"
+                          type="submit"
+                          name="commit"
+                          data-disable="true"
+                          data-bind-disabled="captchaDisabled"
+                          define="{localClass: new CaptchaStateHandler($context, {
+                                                v2Completed: true,
+                                                v3EnterpriseCompleted: false,
+                                                formCompleted: true,
+                                              })}"
+                          enable_submit_onload="true"
                         >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M3.49951 10C3.49951 9.58579 3.8353 9.25 4.24951 9.25L13.9391 9.25L11.2192 6.53036C10.9263 6.23748 10.9263 5.7626 11.2192 5.4697C11.512 5.17679 11.9869 5.17676 12.2798 5.46964L16.2802 9.46964C16.4209 9.6103 16.4999 9.80107 16.4999 10C16.4999 10.1989 16.4209 10.3897 16.2802 10.5304L12.2798 14.5304C11.9869 14.8232 11.512 14.8232 11.2192 14.5303C10.9263 14.2374 10.9263 13.7625 11.2192 13.4696L13.9391 10.75L4.24951 10.75C3.8353 10.75 3.49951 10.4142 3.49951 10Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </span>
-                    </a>
-                  </p>
+                          <span class="content">
+                            <span class="ui-button__text">Continue</span>
+                            <span class="ui-button__hover-icon"
+                              ><svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.49951 10C3.49951 9.58579 3.8353 9.25 4.24951 9.25L13.9391 9.25L11.2192 6.53036C10.9263 6.23748 10.9263 5.7626 11.2192 5.4697C11.512 5.17679 11.9869 5.17676 12.2798 5.46964L16.2802 9.46964C16.4209 9.6103 16.4999 9.80107 16.4999 10C16.4999 10.1989 16.4209 10.3897 16.2802 10.5304L12.2798 14.5304C11.9869 14.8232 11.512 14.8232 11.2192 14.5303C10.9263 14.2374 10.9263 13.7625 11.2192 13.4696L13.9391 10.75L4.24951 10.75C3.8353 10.75 3.49951 10.4142 3.49951 10Z"
+                                  fill="currentColor"
+                                ></path></svg
+                            ></span>
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        aria-hidden="true"
+                        class="shop-loader-line shop-button-loader hide"
+                        data-bind-show="showShopLoader"
+                      ></div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-            <footer class="login-footer">
-              <a
-                class="login-footer__link"
-                target="_blank"
-                href="https://pk.saniamaskatiya.com/66041643225/policies/28949086425.html?locale=en"
-                title="Privacy Policy"
-                >Privacy</a
-              >
-            </footer>
           </div>
         </div>
       </div>
