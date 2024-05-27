@@ -218,7 +218,7 @@ form .input-field label {
   transform: translateY(-120%);
 }
 
-.forgot-pass {
+:where(.forgot-pass, .policy-text) {
   display: inline-flex;
   font-size: 0.95rem;
   margin-top: 14px;
@@ -261,5 +261,17 @@ a:hover {
   text-decoration: underline;
 }
 
+.signup {
+  display: none;
+}
 
+.signup .policy-text {
+  display: flex;
+  align-items: center;
+}
 
+.policy-text input {
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+}
